@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="build/main" path="src/main"/>
+	<classpathentry kind="src" output="build/tests" path="src/tests"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/jpf.jar"/>
+	<classpathentry kind="lib" path="lib/castor-1.3.2.jar"/>
+	<classpathentry kind="lib" path="lib/castor-1.3.2-core.jar"/>
+	<classpathentry kind="lib" path="lib/castor-1.3.2-xml.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang-2.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/junit-4.9.jar"/>
+  <classpathentry kind="lib" path="lib/xmlunit-1.3"/>
+	<classpathentry kind="output" path="build/main"/>
+</classpath>

@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jpf-components>
+    <subtype xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/aprop/listener/ArgChecker</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.SubtypeInfo">
+            <ancestors xsi:type="java:java.lang.String">gov/nasa/jpf/ListenerAdapter</ancestors>
+            <super-methods xsi:type="java:java.lang.String">&lt;init&gt;()V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">instructionExecuted(Lgov/nasa/jpf/jvm/JVM;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">executeInstruction(Lgov/nasa/jpf/jvm/JVM;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">classLoaded(Lgov/nasa/jpf/jvm/JVM;)V</super-methods>
+            <type>Listener</type>
+            <info flags="33">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-aprop\build\main\gov\nasa\jpf\aprop\listener\ArgChecker.class</location>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;()V</methods>
+                <methods xsi:type="java:java.lang.String">instructionExecuted(Lgov/nasa/jpf/jvm/JVM;)V</methods>
+                <methods xsi:type="java:java.lang.String">executeInstruction(Lgov/nasa/jpf/jvm/JVM;)V</methods>
+                <methods xsi:type="java:java.lang.String">getAttr(Lgov/nasa/jpf/jvm/ClassInfo;)Lgov/nasa/jpf/aprop/listener/ArgChecker$Attr;</methods>
+                <methods xsi:type="java:java.lang.String">classLoaded(Lgov/nasa/jpf/jvm/JVM;)V</methods>
+                <methods xsi:type="java:java.lang.String">&lt;clinit&gt;()V</methods>
+                <name>gov/nasa/jpf/aprop/listener/ArgChecker</name>
+                <layer>main</layer>
+                <super-name>gov/nasa/jpf/ListenerAdapter</super-name>
+                <project>jpf-aprop</project>
+            </info>
+        </value>
+    </subtype>
+    <subtype xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/aprop/listener/ConfinedChecker</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.SubtypeInfo">
+            <ancestors xsi:type="java:java.lang.String">gov/nasa/jpf/ListenerAdapter</ancestors>
+            <super-methods xsi:type="java:java.lang.String">&lt;init&gt;()V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">classLoaded(Lgov/nasa/jpf/jvm/JVM;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">instructionExecuted(Lgov/nasa/jpf/jvm/JVM;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">exceptionHandled(Lgov/nasa/jpf/jvm/JVM;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">exceptionThrown(Lgov/nasa/jpf/jvm/JVM;)V</super-methods>
+            <type>Listener</type>
+            <info flags="33">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-aprop\build\main\gov\nasa\jpf\aprop\listener\ConfinedChecker.class</location>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;()V</methods>
+                <methods xsi:type="java:java.lang.String">initCheckers()V</methods>
+                <methods xsi:type="java:java.lang.String">classLoaded(Lgov/nasa/jpf/jvm/JVM;)V</methods>
+                <methods xsi:type="java:java.lang.String">instructionExecuted(Lgov/nasa/jpf/jvm/JVM;)V</methods>
+                <methods xsi:type="java:java.lang.String">exceptionHandled(Lgov/nasa/jpf/jvm/JVM;)V</methods>
+                <methods xsi:type="java:java.lang.String">exceptionThrown(Lgov/nasa/jpf/jvm/JVM;)V</methods>
+                <name>gov/nasa/jpf/aprop/listener/ConfinedChecker</name>
+                <layer>main</layer>
+                <super-name>gov/nasa/jpf/ListenerAdapter</super-name>
+                <project>jpf-aprop</project>
+            </info>
+        </value>
+    </subtype>
+    <subtype xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/aprop/listener/ConstChecker</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.SubtypeInfo">
+            <ancestors xsi:type="java:java.lang.String">gov/nasa/jpf/ListenerAdapter</ancestors>
+            <super-methods xsi:type="java:java.lang.String">instructionExecuted(Lgov/nasa/jpf/jvm/JVM;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">stateAdvanced(Lgov/nasa/jpf/search/Search;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">stateBacktracked(Lgov/nasa/jpf/search/Search;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">stateStored(Lgov/nasa/jpf/search/Search;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">stateRestored(Lgov/nasa/jpf/search/Search;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">classLoaded(Lgov/nasa/jpf/jvm/JVM;)V</super-methods>
+            <type>Listener</type>
+            <info flags="33">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-aprop\build\main\gov\nasa\jpf\aprop\listener\ConstChecker.class</location>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;(Lgov/nasa/jpf/Config;)V</methods>
+                <methods xsi:type="java:java.lang.String">isImmutable(Lgov/nasa/jpf/jvm/InfoObject;)Z</methods>
+                <methods xsi:type="java:java.lang.String">isConst(Lgov/nasa/jpf/jvm/InfoObject;)Z</methods>
+                <methods xsi:type="java:java.lang.String">instructionExecuted(Lgov/nasa/jpf/jvm/JVM;)V</methods>
+                <methods xsi:type="java:java.lang.String">stateAdvanced(Lgov/nasa/jpf/search/Search;)V</methods>
+                <methods xsi:type="java:java.lang.String">stateBacktracked(Lgov/nasa/jpf/search/Search;)V</methods>
+                <methods xsi:type="java:java.lang.String">stateStored(Lgov/nasa/jpf/search/Search;)V</methods>
+                <methods xsi:type="java:java.lang.String">stateRestored(Lgov/nasa/jpf/search/Search;)V</methods>
+                <methods xsi:type="java:java.lang.String">classLoaded(Lgov/nasa/jpf/jvm/JVM;)V</methods>
+                <name>gov/nasa/jpf/aprop/listener/ConstChecker</name>
+                <layer>main</layer>
+                <super-name>gov/nasa/jpf/ListenerAdapter</super-name>
+                <project>jpf-aprop</project>
+            </info>
+        </value>
+    </subtype>
+    <subtype xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/aprop/listener/ContractVerifier</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.SubtypeInfo">
+            <ancestors xsi:type="java:java.lang.String">gov/nasa/jpf/ListenerAdapter</ancestors>
+            <super-methods xsi:type="java:java.lang.String">classLoaded(Lgov/nasa/jpf/jvm/JVM;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">executeInstruction(Lgov/nasa/jpf/jvm/JVM;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">instructionExecuted(Lgov/nasa/jpf/jvm/JVM;)V</super-methods>
+            <type>Listener</type>
+            <info flags="33">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-aprop\build\main\gov\nasa\jpf\aprop\listener\ContractVerifier.class</location>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;(Lgov/nasa/jpf/Config;)V</methods>
+                <methods xsi:type="java:java.lang.String">classLoaded(Lgov/nasa/jpf/jvm/JVM;)V</methods>
+                <methods xsi:type="java:java.lang.String">getClassInfo(Lgov/nasa/jpf/jvm/JVM;Lgov/nasa/jpf/jvm/StackFrame;)Lgov/nasa/jpf/jvm/ClassInfo;</methods>
+                <methods xsi:type="java:java.lang.String">executeInstruction(Lgov/nasa/jpf/jvm/JVM;)V</methods>
+                <methods xsi:type="java:java.lang.String">instructionExecuted(Lgov/nasa/jpf/jvm/JVM;)V</methods>
+                <methods xsi:type="java:java.lang.String">getErrorMessage(Lgov/nasa/jpf/aprop/Contract;Lgov/nasa/jpf/aprop/VarLookup;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;</methods>
+                <methods xsi:type="java:java.lang.String">loadContract(Ljava/lang/String;Lgov/nasa/jpf/jvm/InfoObject;Ljava/util/HashMap;)Lgov/nasa/jpf/aprop/Contract;</methods>
+                <methods xsi:type="java:java.lang.String">getContract(Ljava/lang/String;Lgov/nasa/jpf/jvm/MethodInfo;Ljava/util/HashMap;)Lgov/nasa/jpf/aprop/Contract;</methods>
+                <methods xsi:type="java:java.lang.String">getContract(Ljava/lang/String;Lgov/nasa/jpf/jvm/ClassInfo;Ljava/util/HashMap;)Lgov/nasa/jpf/aprop/Contract;</methods>
+                <methods xsi:type="java:java.lang.String">getPreCondition(Lgov/nasa/jpf/jvm/MethodInfo;)Lgov/nasa/jpf/aprop/Contract;</methods>
+                <methods xsi:type="java:java.lang.String">getPostCondition(Lgov/nasa/jpf/jvm/MethodInfo;)Lgov/nasa/jpf/aprop/Contract;</methods>
+                <methods xsi:type="java:java.lang.String">getInvariant(Lgov/nasa/jpf/jvm/ClassInfo;)Lgov/nasa/jpf/aprop/Contract;</methods>
+                <methods xsi:type="java:java.lang.String">parseContractSpec(Ljava/lang/String;)Lgov/nasa/jpf/aprop/Contract;</methods>
+                <methods xsi:type="java:java.lang.String">error(Ljava/lang/String;)V</methods>
+                <methods xsi:type="java:java.lang.String">&lt;clinit&gt;()V</methods>
+                <name>gov/nasa/jpf/aprop/listener/ContractVerifier</name>
+                <layer>main</layer>
+                <super-name>gov/nasa/jpf/ListenerAdapter</super-name>
+                <project>jpf-aprop</project>
+            </info>
+        </value>
+    </subtype>
+    <subtype xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/aprop/listener/InstanceRegionChecker</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.SubtypeInfo">
+            <ancestors xsi:type="java:java.lang.String">gov/nasa/jpf/ListenerAdapter</ancestors>
+            <super-methods xsi:type="java:java.lang.String">&lt;init&gt;()V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">instructionExecuted(Lgov/nasa/jpf/jvm/JVM;)V</super-methods>
+            <type>Listener</type>
+            <info flags="33">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-aprop\build\main\gov\nasa\jpf\aprop\listener\InstanceRegionChecker.class</location>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;()V</methods>
+                <methods xsi:type="java:java.lang.String">instructionExecuted(Lgov/nasa/jpf/jvm/JVM;)V</methods>
+                <methods xsi:type="java:java.lang.String">registerNewInstanceRegion(Lgov/nasa/jpf/jvm/bytecode/NEW;Lgov/nasa/jpf/jvm/ClassInfo;)V</methods>
+                <methods xsi:type="java:java.lang.String">checkInstanceRegionViolation(Lgov/nasa/jpf/jvm/bytecode/PUTFIELD;)V</methods>
+                <name>gov/nasa/jpf/aprop/listener/InstanceRegionChecker</name>
+                <layer>main</layer>
+                <super-name>gov/nasa/jpf/ListenerAdapter</super-name>
+                <project>jpf-aprop</project>
+            </info>
+        </value>
+    </subtype>
+    <subtype xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/aprop/listener/LockChecker</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.SubtypeInfo">
+            <ancestors xsi:type="java:java.lang.String">gov/nasa/jpf/ListenerAdapter</ancestors>
+            <super-methods xsi:type="java:java.lang.String">instructionExecuted(Lgov/nasa/jpf/jvm/JVM;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">classLoaded(Lgov/nasa/jpf/jvm/JVM;)V</super-methods>
+            <type>Listener</type>
+            <info flags="33">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-aprop\build\main\gov\nasa\jpf\aprop\listener\LockChecker.class</location>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;(Lgov/nasa/jpf/Config;)V</methods>
+                <methods xsi:type="java:java.lang.String">getLockPolicy(Lgov/nasa/jpf/jvm/ClassInfo;Ljava/lang/String;)Lgov/nasa/jpf/aprop/listener/LockChecker$LockPolicy;</methods>
+                <methods xsi:type="java:java.lang.String">instructionExecuted(Lgov/nasa/jpf/jvm/JVM;)V</methods>
+                <methods xsi:type="java:java.lang.String">classLoaded(Lgov/nasa/jpf/jvm/JVM;)V</methods>
+                <methods xsi:type="java:java.lang.String">&lt;clinit&gt;()V</methods>
+                <name>gov/nasa/jpf/aprop/listener/LockChecker</name>
+                <layer>main</layer>
+                <super-name>gov/nasa/jpf/ListenerAdapter</super-name>
+                <project>jpf-aprop</project>
+            </info>
+        </value>
+    </subtype>
+    <subtype xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/aprop/listener/NonHashStorableChecker</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.SubtypeInfo">
+            <ancestors xsi:type="java:java.lang.String">gov/nasa/jpf/aprop/listener/ArgChecker</ancestors>
+            <ancestors xsi:type="java:java.lang.String">gov/nasa/jpf/ListenerAdapter</ancestors>
+            <super-methods xsi:type="java:java.lang.String">&lt;init&gt;()V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">getAttr(Lgov/nasa/jpf/jvm/ClassInfo;)Lgov/nasa/jpf/aprop/listener/ArgChecker$Attr;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">&lt;clinit&gt;()V</super-methods>
+            <type>Listener</type>
+            <info flags="33">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-aprop\build\main\gov\nasa\jpf\aprop\listener\NonHashStorableChecker.class</location>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;()V</methods>
+                <methods xsi:type="java:java.lang.String">getAttr(Lgov/nasa/jpf/jvm/ClassInfo;)Lgov/nasa/jpf/aprop/listener/ArgChecker$Attr;</methods>
+                <methods xsi:type="java:java.lang.String">&lt;clinit&gt;()V</methods>
+                <name>gov/nasa/jpf/aprop/listener/NonHashStorableChecker</name>
+                <layer>main</layer>
+                <super-name>gov/nasa/jpf/aprop/listener/ArgChecker</super-name>
+                <project>jpf-aprop</project>
+            </info>
+        </value>
+    </subtype>
+    <subtype xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/aprop/listener/NonSharedChecker</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.SubtypeInfo">
+            <ancestors xsi:type="java:java.lang.String">gov/nasa/jpf/ListenerAdapter</ancestors>
+            <super-methods xsi:type="java:java.lang.String">executeInstruction(Lgov/nasa/jpf/jvm/JVM;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">objectCreated(Lgov/nasa/jpf/jvm/JVM;)V</super-methods>
+            <type>Listener</type>
+            <info flags="33">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-aprop\build\main\gov\nasa\jpf\aprop\listener\NonSharedChecker.class</location>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;(Lgov/nasa/jpf/Config;)V</methods>
+                <methods xsi:type="java:java.lang.String">isNonShared(Lgov/nasa/jpf/jvm/ElementInfo;)Z</methods>
+                <methods xsi:type="java:java.lang.String">checkLiveCycles(Lgov/nasa/jpf/jvm/ElementInfo;Lgov/nasa/jpf/jvm/ThreadInfo;Lgov/nasa/jpf/aprop/listener/NonSharedChecker$Access;)Z</methods>
+                <methods xsi:type="java:java.lang.String">executeInstruction(Lgov/nasa/jpf/jvm/JVM;)V</methods>
+                <methods xsi:type="java:java.lang.String">objectCreated(Lgov/nasa/jpf/jvm/JVM;)V</methods>
+                <name>gov/nasa/jpf/aprop/listener/NonSharedChecker</name>
+                <layer>main</layer>
+                <super-name>gov/nasa/jpf/ListenerAdapter</super-name>
+                <project>jpf-aprop</project>
+            </info>
+        </value>
+    </subtype>
+    <subtype xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/aprop/listener/NonnullChecker</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.SubtypeInfo">
+            <ancestors xsi:type="java:java.lang.String">gov/nasa/jpf/ListenerAdapter</ancestors>
+            <super-methods xsi:type="java:java.lang.String">&lt;init&gt;()V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">classLoaded(Lgov/nasa/jpf/jvm/JVM;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">executeInstruction(Lgov/nasa/jpf/jvm/JVM;)V</super-methods>
+            <type>Listener</type>
+            <info flags="33">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-aprop\build\main\gov\nasa\jpf\aprop\listener\NonnullChecker.class</location>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;()V</methods>
+                <methods xsi:type="java:java.lang.String">classLoaded(Lgov/nasa/jpf/jvm/JVM;)V</methods>
+                <methods xsi:type="java:java.lang.String">executeInstruction(Lgov/nasa/jpf/jvm/JVM;)V</methods>
+                <methods xsi:type="java:java.lang.String">throwAssertionError(Lgov/nasa/jpf/jvm/ThreadInfo;Ljava/lang/String;)V</methods>
+                <methods xsi:type="java:java.lang.String">checkNonNullInstanceField(Lgov/nasa/jpf/jvm/ClassInfo;Lgov/nasa/jpf/jvm/ElementInfo;)Lgov/nasa/jpf/jvm/FieldInfo;</methods>
+                <methods xsi:type="java:java.lang.String">checkNonNullStaticField(Lgov/nasa/jpf/jvm/ClassInfo;)Lgov/nasa/jpf/jvm/FieldInfo;</methods>
+                <name>gov/nasa/jpf/aprop/listener/NonnullChecker</name>
+                <layer>main</layer>
+                <super-name>gov/nasa/jpf/ListenerAdapter</super-name>
+                <project>jpf-aprop</project>
+            </info>
+        </value>
+    </subtype>
+    <subtype xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/aprop/listener/SandBoxChecker</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.SubtypeInfo">
+            <ancestors xsi:type="java:java.lang.String">gov/nasa/jpf/ListenerAdapter</ancestors>
+            <super-methods xsi:type="java:java.lang.String">&lt;init&gt;()V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">instructionExecuted(Lgov/nasa/jpf/jvm/JVM;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">exceptionHandled(Lgov/nasa/jpf/jvm/JVM;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">classLoaded(Lgov/nasa/jpf/jvm/JVM;)V</super-methods>
+            <type>Listener</type>
+            <info flags="33">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-aprop\build\main\gov\nasa\jpf\aprop\listener\SandBoxChecker.class</location>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;()V</methods>
+                <methods xsi:type="java:java.lang.String">updateContext(Lgov/nasa/jpf/jvm/ThreadInfo;Lgov/nasa/jpf/jvm/StackFrame;)V</methods>
+                <methods xsi:type="java:java.lang.String">setContext(Lgov/nasa/jpf/jvm/ThreadInfo;)V</methods>
+                <methods xsi:type="java:java.lang.String">isNewContext(ILgov/nasa/jpf/aprop/listener/SandBoxChecker$SBContext;)Z</methods>
+                <methods xsi:type="java:java.lang.String">getSandBoxId(Lgov/nasa/jpf/jvm/ThreadInfo;Lgov/nasa/jpf/jvm/StackFrame;)I</methods>
+                <methods xsi:type="java:java.lang.String">getSandBoxId(Lgov/nasa/jpf/jvm/ClassInfo;)I</methods>
+                <methods xsi:type="java:java.lang.String">getSandBoxId(Lgov/nasa/jpf/jvm/ElementInfo;)I</methods>
+                <methods xsi:type="java:java.lang.String">getOwnerId(Lgov/nasa/jpf/jvm/ElementInfo;)I</methods>
+                <methods xsi:type="java:java.lang.String">markOwned(Lgov/nasa/jpf/jvm/ElementInfo;I)V</methods>
+                <methods xsi:type="java:java.lang.String">resetOwner(Lgov/nasa/jpf/jvm/ThreadInfo;Lgov/nasa/jpf/jvm/ElementInfo;I)V</methods>
+                <methods xsi:type="java:java.lang.String">resetOwnedReferences(Lgov/nasa/jpf/jvm/ThreadInfo;Lgov/nasa/jpf/jvm/ElementInfo;I)V</methods>
+                <methods xsi:type="java:java.lang.String">checkSandBoxViolation(Lgov/nasa/jpf/jvm/ThreadInfo;Lgov/nasa/jpf/jvm/ElementInfo;Lgov/nasa/jpf/jvm/bytecode/Instruction;)Z</methods>
+                <methods xsi:type="java:java.lang.String">checkSandBoxViolation(Lgov/nasa/jpf/jvm/ThreadInfo;Lgov/nasa/jpf/jvm/ClassInfo;Lgov/nasa/jpf/jvm/bytecode/Instruction;)Z</methods>
+                <methods xsi:type="java:java.lang.String">instructionExecuted(Lgov/nasa/jpf/jvm/JVM;)V</methods>
+                <methods xsi:type="java:java.lang.String">exceptionHandled(Lgov/nasa/jpf/jvm/JVM;)V</methods>
+                <methods xsi:type="java:java.lang.String">classLoaded(Lgov/nasa/jpf/jvm/JVM;)V</methods>
+                <name>gov/nasa/jpf/aprop/listener/SandBoxChecker</name>
+                <layer>main</layer>
+                <super-name>gov/nasa/jpf/ListenerAdapter</super-name>
+                <project>jpf-aprop</project>
+            </info>
+        </value>
+    </subtype>
+    <subtype xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/aprop/listener/SequenceAnalyzer</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.SubtypeInfo">
+            <ancestors xsi:type="java:java.lang.String">gov/nasa/jpf/ListenerAdapter</ancestors>
+            <super-methods xsi:type="java:java.lang.String">instructionExecuted(Lgov/nasa/jpf/jvm/JVM;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">searchStarted(Lgov/nasa/jpf/search/Search;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">searchFinished(Lgov/nasa/jpf/search/Search;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">stateAdvanced(Lgov/nasa/jpf/search/Search;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">stateBacktracked(Lgov/nasa/jpf/search/Search;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">stateStored(Lgov/nasa/jpf/search/Search;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">stateRestored(Lgov/nasa/jpf/search/Search;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">publishFinished(Lgov/nasa/jpf/report/Publisher;)V</super-methods>
+            <type>Listener</type>
+            <info flags="33">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-aprop\build\main\gov\nasa\jpf\aprop\listener\SequenceAnalyzer.class</location>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;(Lgov/nasa/jpf/Config;Lgov/nasa/jpf/JPF;)V</methods>
+                <methods xsi:type="java:java.lang.String">isActiveSequence(Ljava/lang/String;)Z</methods>
+                <methods xsi:type="java:java.lang.String">isSequenceObject(Ljava/lang/String;I)Z</methods>
+                <methods xsi:type="java:java.lang.String">getAnnotation(Lgov/nasa/jpf/jvm/MethodInfo;Ljava/lang/String;)Lgov/nasa/jpf/jvm/AnnotationInfo;</methods>
+                <methods xsi:type="java:java.lang.String">getAnnotation(Lgov/nasa/jpf/jvm/FieldInfo;Ljava/lang/String;)Lgov/nasa/jpf/jvm/AnnotationInfo;</methods>
+                <methods xsi:type="java:java.lang.String">getEventName(Lgov/nasa/jpf/aprop/listener/SequenceAnalyzer$SequenceInfo;Lgov/nasa/jpf/jvm/MethodInfo;Ljava/lang/String;)Ljava/lang/String;</methods>
+                <methods xsi:type="java:java.lang.String">processSequence(Ljava/lang/String;)V</methods>
+                <methods xsi:type="java:java.lang.String">processAllOpenSequences()V</methods>
+                <methods xsi:type="java:java.lang.String">sequenceProcessed(Ljava/lang/String;)V</methods>
+                <methods xsi:type="java:java.lang.String">instructionExecuted(Lgov/nasa/jpf/jvm/JVM;)V</methods>
+                <methods xsi:type="java:java.lang.String">processInvokeInstruction(Lgov/nasa/jpf/jvm/ThreadInfo;Lgov/nasa/jpf/jvm/bytecode/InvokeInstruction;)V</methods>
+                <methods xsi:type="java:java.lang.String">updateSequenceScope(Lgov/nasa/jpf/jvm/AnnotationInfo;Lgov/nasa/jpf/jvm/ThreadInfo;Lgov/nasa/jpf/jvm/MethodInfo;Lgov/nasa/jpf/jvm/bytecode/InvokeInstruction;)V</methods>
+                <methods xsi:type="java:java.lang.String">getThis(Lgov/nasa/jpf/jvm/ThreadInfo;Lgov/nasa/jpf/jvm/bytecode/Instruction;)I</methods>
+                <methods xsi:type="java:java.lang.String">emitSequenceOp(Lgov/nasa/jpf/jvm/AnnotationInfo;Lgov/nasa/jpf/jvm/ThreadInfo;Lgov/nasa/jpf/jvm/MethodInfo;Lgov/nasa/jpf/jvm/bytecode/Instruction;)V</methods>
+                <methods xsi:type="java:java.lang.String">processASTORE(Lgov/nasa/jpf/jvm/ThreadInfo;Lgov/nasa/jpf/jvm/bytecode/ASTORE;)V</methods>
+                <methods xsi:type="java:java.lang.String">processPUTFIELD(Lgov/nasa/jpf/jvm/ThreadInfo;Lgov/nasa/jpf/jvm/bytecode/PUTFIELD;)V</methods>
+                <methods xsi:type="java:java.lang.String">processReturnInstruction(Lgov/nasa/jpf/jvm/ThreadInfo;Lgov/nasa/jpf/jvm/bytecode/ReturnInstruction;)V</methods>
+                <methods xsi:type="java:java.lang.String">getEventSource(Lgov/nasa/jpf/jvm/ThreadInfo;Lgov/nasa/jpf/aprop/listener/SequenceAnalyzer$SequenceInfo;)I</methods>
+                <methods xsi:type="java:java.lang.String">searchStarted(Lgov/nasa/jpf/search/Search;)V</methods>
+                <methods xsi:type="java:java.lang.String">searchFinished(Lgov/nasa/jpf/search/Search;)V</methods>
+                <methods xsi:type="java:java.lang.String">stateAdvanced(Lgov/nasa/jpf/search/Search;)V</methods>
+                <methods xsi:type="java:java.lang.String">stateBacktracked(Lgov/nasa/jpf/search/Search;)V</methods>
+                <methods xsi:type="java:java.lang.String">stateStored(Lgov/nasa/jpf/search/Search;)V</methods>
+                <methods xsi:type="java:java.lang.String">stateRestored(Lgov/nasa/jpf/search/Search;)V</methods>
+                <methods xsi:type="java:java.lang.String">publishFinished(Lgov/nasa/jpf/report/Publisher;)V</methods>
+                <name>gov/nasa/jpf/aprop/listener/SequenceAnalyzer</name>
+                <layer>main</layer>
+                <super-name>gov/nasa/jpf/ListenerAdapter</super-name>
+                <project>jpf-aprop</project>
+            </info>
+        </value>
+    </subtype>
+    <subtype xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/aprop/listener/SharedChecker</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.SubtypeInfo">
+            <ancestors xsi:type="java:java.lang.String">gov/nasa/jpf/ListenerAdapter</ancestors>
+            <super-methods xsi:type="java:java.lang.String">&lt;init&gt;()V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">classLoaded(Lgov/nasa/jpf/jvm/JVM;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">objectCreated(Lgov/nasa/jpf/jvm/JVM;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">objectReleased(Lgov/nasa/jpf/jvm/JVM;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">instructionExecuted(Lgov/nasa/jpf/jvm/JVM;)V</super-methods>
+            <type>Listener</type>
+            <info flags="33">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-aprop\build\main\gov\nasa\jpf\aprop\listener\SharedChecker.class</location>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;()V</methods>
+                <methods xsi:type="java:java.lang.String">classLoaded(Lgov/nasa/jpf/jvm/JVM;)V</methods>
+                <methods xsi:type="java:java.lang.String">objectCreated(Lgov/nasa/jpf/jvm/JVM;)V</methods>
+                <methods xsi:type="java:java.lang.String">isValidThread(Lgov/nasa/jpf/jvm/ThreadInfo;[Ljava/lang/String;)Z</methods>
+                <methods xsi:type="java:java.lang.String">objectReleased(Lgov/nasa/jpf/jvm/JVM;)V</methods>
+                <methods xsi:type="java:java.lang.String">createErrorMessage(Lgov/nasa/jpf/jvm/ThreadInfo;Lgov/nasa/jpf/jvm/ElementInfo;[Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;</methods>
+                <methods xsi:type="java:java.lang.String">checkIllegalAccess(Lgov/nasa/jpf/jvm/ThreadInfo;Lgov/nasa/jpf/jvm/ElementInfo;)Z</methods>
+                <methods xsi:type="java:java.lang.String">instructionExecuted(Lgov/nasa/jpf/jvm/JVM;)V</methods>
+                <name>gov/nasa/jpf/aprop/listener/SharedChecker</name>
+                <layer>main</layer>
+                <super-name>gov/nasa/jpf/ListenerAdapter</super-name>
+                <project>jpf-aprop</project>
+            </info>
+        </value>
+    </subtype>
+    <subtype xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/aprop/region/DynamicRegionListener</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.SubtypeInfo">
+            <ancestors xsi:type="java:java.lang.String">gov/nasa/jpf/ListenerAdapter</ancestors>
+            <super-methods xsi:type="java:java.lang.String">&lt;init&gt;()V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">instructionExecuted(Lgov/nasa/jpf/jvm/JVM;)V</super-methods>
+            <type>Listener</type>
+            <info flags="33">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-aprop\build\main\gov\nasa\jpf\aprop\region\DynamicRegionListener.class</location>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;()V</methods>
+                <methods xsi:type="java:java.lang.String">instructionExecuted(Lgov/nasa/jpf/jvm/JVM;)V</methods>
+                <methods xsi:type="java:java.lang.String">extendDynamicRegion(Lgov/nasa/jpf/jvm/MethodInfo;Lgov/nasa/jpf/jvm/MethodInfo;)V</methods>
+                <name>gov/nasa/jpf/aprop/region/DynamicRegionListener</name>
+                <layer>main</layer>
+                <super-name>gov/nasa/jpf/ListenerAdapter</super-name>
+                <project>jpf-aprop</project>
+            </info>
+        </value>
+    </subtype>
+    <subtype xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/aprop/region/RegionsChecker</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.SubtypeInfo">
+            <ancestors xsi:type="java:java.lang.String">gov/nasa/jpf/ListenerAdapter</ancestors>
+            <super-methods xsi:type="java:java.lang.String">&lt;init&gt;()V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">classLoaded(Lgov/nasa/jpf/jvm/JVM;)V</super-methods>
+            <type>Listener</type>
+            <info flags="33">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-aprop\build\main\gov\nasa\jpf\aprop\region\RegionsChecker.class</location>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;()V</methods>
+                <methods xsi:type="java:java.lang.String">classLoaded(Lgov/nasa/jpf/jvm/JVM;)V</methods>
+                <name>gov/nasa/jpf/aprop/region/RegionsChecker</name>
+                <layer>main</layer>
+                <super-name>gov/nasa/jpf/ListenerAdapter</super-name>
+                <project>jpf-aprop</project>
+            </info>
+        </value>
+    </subtype>
+    <native-peer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/aprop/region/JPF_gov_nasa_jpf_aprop_region_DynamicRegion</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.NativePeerInfo">
+            <model-name>unknown</model-name>
+            <type>NativePeerClass</type>
+            <info flags="33">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-aprop\build\peers\gov\nasa\jpf\aprop\region\JPF_gov_nasa_jpf_aprop_region_DynamicRegion.class</location>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;()V</methods>
+                <methods xsi:type="java:java.lang.String">enterRegion(Lgov/nasa/jpf/jvm/MJIEnv;II)V</methods>
+                <methods xsi:type="java:java.lang.String">endRegion(Lgov/nasa/jpf/jvm/MJIEnv;II)V</methods>
+                <methods xsi:type="java:java.lang.String">amIInDynamicRegion(Lgov/nasa/jpf/jvm/MJIEnv;I)Z</methods>
+                <name>gov/nasa/jpf/aprop/region/JPF_gov_nasa_jpf_aprop_region_DynamicRegion</name>
+                <layer>peers</layer>
+                <super-name>java/lang/Object</super-name>
+                <project>jpf-aprop</project>
+            </info>
+        </value>
+    </native-peer>
+</jpf-components>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jpf-components>
+    <subtype xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/shell/panels/searchgraph/SearchGraphTracker</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.SubtypeInfo">
+            <ancestors xsi:type="java:java.lang.String">gov/nasa/jpf/ListenerAdapter</ancestors>
+            <super-methods xsi:type="java:java.lang.String">&lt;init&gt;()V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">searchStarted(Lgov/nasa/jpf/search/Search;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">choiceGeneratorSet(Lgov/nasa/jpf/jvm/JVM;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">choiceGeneratorAdvanced(Lgov/nasa/jpf/jvm/JVM;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">stateBacktracked(Lgov/nasa/jpf/search/Search;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">searchFinished(Lgov/nasa/jpf/search/Search;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">instructionExecuted(Lgov/nasa/jpf/jvm/JVM;)V</super-methods>
+            <type>Listener</type>
+            <info flags="33">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-shell\build\main\gov\nasa\jpf\shell\panels\searchgraph\SearchGraphTracker.class</location>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;()V</methods>
+                <methods xsi:type="java:java.lang.String">searchStarted(Lgov/nasa/jpf/search/Search;)V</methods>
+                <methods xsi:type="java:java.lang.String">choiceGeneratorSet(Lgov/nasa/jpf/jvm/JVM;)V</methods>
+                <methods xsi:type="java:java.lang.String">choiceGeneratorAdvanced(Lgov/nasa/jpf/jvm/JVM;)V</methods>
+                <methods xsi:type="java:java.lang.String">stateBacktracked(Lgov/nasa/jpf/search/Search;)V</methods>
+                <methods xsi:type="java:java.lang.String">searchFinished(Lgov/nasa/jpf/search/Search;)V</methods>
+                <methods xsi:type="java:java.lang.String">instructionExecuted(Lgov/nasa/jpf/jvm/JVM;)V</methods>
+                <methods xsi:type="java:java.lang.String">getThreadCount()I</methods>
+                <methods xsi:type="java:java.lang.String">getGraph()Ledu/uci/ics/jung/graph/DirectedSparseGraph;</methods>
+                <methods xsi:type="java:java.lang.String">&lt;clinit&gt;()V</methods>
+                <name>gov/nasa/jpf/shell/panels/searchgraph/SearchGraphTracker</name>
+                <layer>main</layer>
+                <super-name>gov/nasa/jpf/ListenerAdapter</super-name>
+                <project>jpf-shell</project>
+            </info>
+        </value>
+    </subtype>
+    <subtype xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/shell/util/ProgressTrackerUI$JPFAdapter</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.SubtypeInfo">
+            <ancestors xsi:type="java:java.lang.String">gov/nasa/jpf/ListenerAdapter</ancestors>
+            <super-methods xsi:type="java:java.lang.String">stateAdvanced(Lgov/nasa/jpf/search/Search;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">stateBacktracked(Lgov/nasa/jpf/search/Search;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">stateRestored(Lgov/nasa/jpf/search/Search;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">searchStarted(Lgov/nasa/jpf/search/Search;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">searchFinished(Lgov/nasa/jpf/search/Search;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">propertyViolated(Lgov/nasa/jpf/search/Search;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">searchConstraintHit(Lgov/nasa/jpf/search/Search;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">stateProcessed(Lgov/nasa/jpf/search/Search;)V</super-methods>
+            <type>Listener</type>
+            <info flags="32">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-shell\build\main\gov\nasa\jpf\shell\util\ProgressTrackerUI$JPFAdapter.class</location>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;(Lgov/nasa/jpf/shell/util/ProgressTrackerUI;)V</methods>
+                <methods xsi:type="java:java.lang.String">checkStop(Lgov/nasa/jpf/search/Search;)V</methods>
+                <methods xsi:type="java:java.lang.String">setStartTime()V</methods>
+                <methods xsi:type="java:java.lang.String">updateTime()V</methods>
+                <methods xsi:type="java:java.lang.String">stateAdvanced(Lgov/nasa/jpf/search/Search;)V</methods>
+                <methods xsi:type="java:java.lang.String">stateBacktracked(Lgov/nasa/jpf/search/Search;)V</methods>
+                <methods xsi:type="java:java.lang.String">stateRestored(Lgov/nasa/jpf/search/Search;)V</methods>
+                <methods xsi:type="java:java.lang.String">searchStarted(Lgov/nasa/jpf/search/Search;)V</methods>
+                <methods xsi:type="java:java.lang.String">searchFinished(Lgov/nasa/jpf/search/Search;)V</methods>
+                <methods xsi:type="java:java.lang.String">propertyViolated(Lgov/nasa/jpf/search/Search;)V</methods>
+                <methods xsi:type="java:java.lang.String">searchConstraintHit(Lgov/nasa/jpf/search/Search;)V</methods>
+                <methods xsi:type="java:java.lang.String">stateProcessed(Lgov/nasa/jpf/search/Search;)V</methods>
+                <name>gov/nasa/jpf/shell/util/ProgressTrackerUI$JPFAdapter</name>
+                <layer>main</layer>
+                <super-name>gov/nasa/jpf/ListenerAdapter</super-name>
+                <project>jpf-shell</project>
+            </info>
+        </value>
+    </subtype>
+</jpf-components>

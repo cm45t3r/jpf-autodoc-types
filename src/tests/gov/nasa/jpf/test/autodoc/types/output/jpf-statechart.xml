@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jpf-components>
+    <subtype xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/jvm/JPF_gov_nasa_jpf_sc_StateMachine$Listener</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.SubtypeInfo">
+            <ancestors xsi:type="java:java.lang.String">gov/nasa/jpf/ListenerAdapter</ancestors>
+            <super-methods xsi:type="java:java.lang.String">&lt;init&gt;()V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">stateAdvanced(Lgov/nasa/jpf/search/Search;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">stateBacktracked(Lgov/nasa/jpf/search/Search;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">searchFinished(Lgov/nasa/jpf/search/Search;)V</super-methods>
+            <type>Listener</type>
+            <info flags="32">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-statechart\build\peers\gov\nasa\jpf\jvm\JPF_gov_nasa_jpf_sc_StateMachine$Listener.class</location>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;()V</methods>
+                <methods xsi:type="java:java.lang.String">isSCEventState(Lgov/nasa/jpf/search/Search;)Z</methods>
+                <methods xsi:type="java:java.lang.String">stateAdvanced(Lgov/nasa/jpf/search/Search;)V</methods>
+                <methods xsi:type="java:java.lang.String">stateBacktracked(Lgov/nasa/jpf/search/Search;)V</methods>
+                <methods xsi:type="java:java.lang.String">searchFinished(Lgov/nasa/jpf/search/Search;)V</methods>
+                <name>gov/nasa/jpf/jvm/JPF_gov_nasa_jpf_sc_StateMachine$Listener</name>
+                <layer>peers</layer>
+                <super-name>gov/nasa/jpf/ListenerAdapter</super-name>
+                <project>jpf-statechart</project>
+            </info>
+        </value>
+    </subtype>
+    <subtype xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/tools/sc/Coverage</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.SubtypeInfo">
+            <ancestors xsi:type="java:java.lang.String">gov/nasa/jpf/PropertyListenerAdapter</ancestors>
+            <super-methods xsi:type="java:java.lang.String">executeInstruction(Lgov/nasa/jpf/jvm/JVM;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">searchFinished(Lgov/nasa/jpf/search/Search;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">publishStart(Lgov/nasa/jpf/report/Publisher;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">publishTransition(Lgov/nasa/jpf/report/Publisher;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">publishPropertyViolation(Lgov/nasa/jpf/report/Publisher;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">publishFinished(Lgov/nasa/jpf/report/Publisher;)V</super-methods>
+            <type>Listener</type>
+            <info flags="33">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-statechart\build\main\gov\nasa\jpf\tools\sc\Coverage.class</location>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;(Lgov/nasa/jpf/Config;Lgov/nasa/jpf/JPF;)V</methods>
+                <methods xsi:type="java:java.lang.String">getErrorMessage()Ljava/lang/String;</methods>
+                <methods xsi:type="java:java.lang.String">executeInstruction(Lgov/nasa/jpf/jvm/JVM;)V</methods>
+                <methods xsi:type="java:java.lang.String">searchFinished(Lgov/nasa/jpf/search/Search;)V</methods>
+                <methods xsi:type="java:java.lang.String">publishStart(Lgov/nasa/jpf/report/Publisher;)V</methods>
+                <methods xsi:type="java:java.lang.String">publishTransition(Lgov/nasa/jpf/report/Publisher;)V</methods>
+                <methods xsi:type="java:java.lang.String">publishPropertyViolation(Lgov/nasa/jpf/report/Publisher;)V</methods>
+                <methods xsi:type="java:java.lang.String">publishFinished(Lgov/nasa/jpf/report/Publisher;)V</methods>
+                <name>gov/nasa/jpf/tools/sc/Coverage</name>
+                <layer>main</layer>
+                <super-name>gov/nasa/jpf/PropertyListenerAdapter</super-name>
+                <interfaces xsi:type="java:java.lang.String">gov/nasa/jpf/report/PublisherExtension</interfaces>
+                <project>jpf-statechart</project>
+            </info>
+        </value>
+    </subtype>
+    <subtype xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/tools/sc/PathConstraint</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.SubtypeInfo">
+            <ancestors xsi:type="java:java.lang.String">gov/nasa/jpf/ListenerAdapter</ancestors>
+            <super-methods xsi:type="java:java.lang.String">&lt;init&gt;()V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">choiceGeneratorAdvanced(Lgov/nasa/jpf/jvm/JVM;)V</super-methods>
+            <type>Listener</type>
+            <info flags="33">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-statechart\build\main\gov\nasa\jpf\tools\sc\PathConstraint.class</location>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;()V</methods>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;(Lgov/nasa/jpf/Config;)V</methods>
+                <methods xsi:type="java:java.lang.String">init(Ljava/lang/String;)V</methods>
+                <methods xsi:type="java:java.lang.String">dump(Ljava/io/PrintWriter;)V</methods>
+                <methods xsi:type="java:java.lang.String">getConstraint(Lgov/nasa/jpf/jvm/choice/sc/SCEvent;)Lgov/nasa/jpf/tools/sc/PathConstraint$Constraint;</methods>
+                <methods xsi:type="java:java.lang.String">registerAnchors()V</methods>
+                <methods xsi:type="java:java.lang.String">choiceGeneratorAdvanced(Lgov/nasa/jpf/jvm/JVM;)V</methods>
+                <methods xsi:type="java:java.lang.String">process(Lgov/nasa/jpf/util/script/Section;)V</methods>
+                <methods xsi:type="java:java.lang.String">process(Lgov/nasa/jpf/util/script/Event;)V</methods>
+                <methods xsi:type="java:java.lang.String">process(Lgov/nasa/jpf/util/script/Alternative;)V</methods>
+                <methods xsi:type="java:java.lang.String">process(Lgov/nasa/jpf/util/script/Repetition;)V</methods>
+                <methods xsi:type="java:java.lang.String">main([Ljava/lang/String;)V</methods>
+                <methods xsi:type="java:java.lang.String">&lt;clinit&gt;()V</methods>
+                <name>gov/nasa/jpf/tools/sc/PathConstraint</name>
+                <layer>main</layer>
+                <super-name>gov/nasa/jpf/ListenerAdapter</super-name>
+                <interfaces xsi:type="java:java.lang.String">gov/nasa/jpf/util/script/ElementProcessor</interfaces>
+                <project>jpf-statechart</project>
+            </info>
+        </value>
+    </subtype>
+    <subtype xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/tools/visualize/VisualModel$VisualListener</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.SubtypeInfo">
+            <ancestors xsi:type="java:java.lang.String">gov/nasa/jpf/listener/ChoiceTracker</ancestors>
+            <ancestors xsi:type="java:java.lang.String">gov/nasa/jpf/ListenerAdapter</ancestors>
+            <super-methods xsi:type="java:java.lang.String">&lt;init&gt;(Lgov/nasa/jpf/tools/visualize/VisualModel;Lgov/nasa/jpf/JPF;Ljava/lang/String;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">propertyViolated(Lgov/nasa/jpf/search/Search;)V</super-methods>
+            <type>Listener</type>
+            <info flags="32">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-statechart\build\main\gov\nasa\jpf\tools\visualize\VisualModel$VisualListener.class</location>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;(Lgov/nasa/jpf/tools/visualize/VisualModel;Lgov/nasa/jpf/JPF;Ljava/lang/String;)V</methods>
+                <methods xsi:type="java:java.lang.String">propertyViolated(Lgov/nasa/jpf/search/Search;)V</methods>
+                <name>gov/nasa/jpf/tools/visualize/VisualModel$VisualListener</name>
+                <layer>main</layer>
+                <super-name>gov/nasa/jpf/listener/ChoiceTracker</super-name>
+                <project>jpf-statechart</project>
+            </info>
+        </value>
+    </subtype>
+    <model-class xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/sc/EventSpec</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.ModelClassInfo">
+            <std-name>unknown</std-name>
+            <type>ModelClass</type>
+            <info flags="33">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-statechart\build\classes\gov\nasa\jpf\sc\EventSpec.class</location>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;(Ljava/lang/String;[Ljava/lang/Object;)V</methods>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;(Ljava/lang/String;[Ljava/lang/Object;Lgov/nasa/jpf/sc/EventSpec;)V</methods>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;(Ljava/lang/String;[Ljava/lang/Object;ILgov/nasa/jpf/sc/EventSpec;)V</methods>
+                <methods xsi:type="java:java.lang.String">toString()Ljava/lang/String;</methods>
+                <methods xsi:type="java:java.lang.String">equals(Ljava/lang/String;[Ljava/lang/Object;I)Z</methods>
+                <methods xsi:type="java:java.lang.String">getName()Ljava/lang/String;</methods>
+                <methods xsi:type="java:java.lang.String">getArgs()[Ljava/lang/Object;</methods>
+                <methods xsi:type="java:java.lang.String">getPriority()I</methods>
+                <methods xsi:type="java:java.lang.String">setPriority(I)V</methods>
+                <methods xsi:type="java:java.lang.String">setNext(Lgov/nasa/jpf/sc/EventSpec;)V</methods>
+                <methods xsi:type="java:java.lang.String">getNext()Lgov/nasa/jpf/sc/EventSpec;</methods>
+                <methods xsi:type="java:java.lang.String">matches(Ljava/lang/reflect/Method;)Z</methods>
+                <name>gov/nasa/jpf/sc/EventSpec</name>
+                <layer>classes</layer>
+                <super-name>java/lang/Object</super-name>
+                <project>jpf-statechart</project>
+            </info>
+        </value>
+    </model-class>
+    <model-class xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/sc/PendingEventQueue</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.ModelClassInfo">
+            <std-name>unknown</std-name>
+            <type>ModelClass</type>
+            <info flags="33">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-statechart\build\classes\gov\nasa\jpf\sc\PendingEventQueue.class</location>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;()V</methods>
+                <methods xsi:type="java:java.lang.String">getEvent(Ljava/lang/String;[Ljava/lang/Object;I)Lgov/nasa/jpf/sc/EventSpec;</methods>
+                <methods xsi:type="java:java.lang.String">toString()Ljava/lang/String;</methods>
+                <methods xsi:type="java:java.lang.String">add(Ljava/lang/String;[Ljava/lang/Object;I)V</methods>
+                <methods xsi:type="java:java.lang.String">remove(Lgov/nasa/jpf/sc/EventSpec;)V</methods>
+                <methods xsi:type="java:java.lang.String">peekFirst()Lgov/nasa/jpf/sc/EventSpec;</methods>
+                <methods xsi:type="java:java.lang.String">getPendingEvent()Lgov/nasa/jpf/sc/EventSpec;</methods>
+                <name>gov/nasa/jpf/sc/PendingEventQueue</name>
+                <layer>classes</layer>
+                <super-name>java/lang/Object</super-name>
+                <project>jpf-statechart</project>
+            </info>
+        </value>
+    </model-class>
+    <model-class xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/sc/Source</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.ModelClassInfo">
+            <std-name>unknown</std-name>
+            <type>ModelClass</type>
+            <info flags="9729">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-statechart\build\classes\gov\nasa\jpf\sc\Source.class</location>
+                <methods xsi:type="java:java.lang.String">value()Ljava/lang/String;</methods>
+                <name>gov/nasa/jpf/sc/Source</name>
+                <layer>classes</layer>
+                <super-name>java/lang/Object</super-name>
+                <interfaces xsi:type="java:java.lang.String">java/lang/annotation/Annotation</interfaces>
+                <project>jpf-statechart</project>
+            </info>
+        </value>
+    </model-class>
+    <model-class xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/sc/State</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.ModelClassInfo">
+            <std-name>unknown</std-name>
+            <type>ModelClass</type>
+            <info flags="1057">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-statechart\build\classes\gov\nasa\jpf\sc\State.class</location>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;()V</methods>
+                <methods xsi:type="java:java.lang.String">reset()V</methods>
+                <methods xsi:type="java:java.lang.String">initialize()V</methods>
+                <methods xsi:type="java:java.lang.String">setStateFields()V</methods>
+                <methods xsi:type="java:java.lang.String">setSpecialMethods()V</methods>
+                <methods xsi:type="java:java.lang.String">setStateMachine(Lgov/nasa/jpf/sc/StateMachine;)V</methods>
+                <methods xsi:type="java:java.lang.String">getMasterState()Lgov/nasa/jpf/sc/State;</methods>
+                <methods xsi:type="java:java.lang.String">terminate()V</methods>
+                <methods xsi:type="java:java.lang.String">executeEntryAction()V</methods>
+                <methods xsi:type="java:java.lang.String">executeDoAction()V</methods>
+                <methods xsi:type="java:java.lang.String">executeExitAction()V</methods>
+                <methods xsi:type="java:java.lang.String">executeCompletionTrigger()V</methods>
+                <methods xsi:type="java:java.lang.String">isEndState()Z</methods>
+                <methods xsi:type="java:java.lang.String">isActive()Z</methods>
+                <methods xsi:type="java:java.lang.String">getNext()Lgov/nasa/jpf/sc/State;</methods>
+                <methods xsi:type="java:java.lang.String">getName()Ljava/lang/String;</methods>
+                <methods xsi:type="java:java.lang.String">getTypeName()Ljava/lang/String;</methods>
+                <methods xsi:type="java:java.lang.String">getFieldName()Ljava/lang/String;</methods>
+                <methods xsi:type="java:java.lang.String">getSuperState()Lgov/nasa/jpf/sc/State;</methods>
+                <methods xsi:type="java:java.lang.String">getSubStates()[Lgov/nasa/jpf/sc/State;</methods>
+                <methods xsi:type="java:java.lang.String">getMachine()Lgov/nasa/jpf/sc/StateMachine;</methods>
+                <methods xsi:type="java:java.lang.String">toString()Ljava/lang/String;</methods>
+                <methods xsi:type="java:java.lang.String">getCommonParent(Lgov/nasa/jpf/sc/State;)Lgov/nasa/jpf/sc/State;</methods>
+                <methods xsi:type="java:java.lang.String">exitState(Lgov/nasa/jpf/sc/State;)V</methods>
+                <methods xsi:type="java:java.lang.String">enterParent()V</methods>
+                <methods xsi:type="java:java.lang.String">enter()V</methods>
+                <methods xsi:type="java:java.lang.String">enterState(Lgov/nasa/jpf/sc/State;)V</methods>
+                <methods xsi:type="java:java.lang.String">setVisited()V</methods>
+                <methods xsi:type="java:java.lang.String">wasVisited()Z</methods>
+                <methods xsi:type="java:java.lang.String">setReEntered()V</methods>
+                <methods xsi:type="java:java.lang.String">isReEntered()Z</methods>
+                <methods xsi:type="java:java.lang.String">hasNextState()Z</methods>
+                <methods xsi:type="java:java.lang.String">makeInitial(Lgov/nasa/jpf/sc/State;)Lgov/nasa/jpf/sc/State;</methods>
+                <methods xsi:type="java:java.lang.String">setNextState(Lgov/nasa/jpf/sc/State;)V</methods>
+                <methods xsi:type="java:java.lang.String">setNextOrthogonalState(Lgov/nasa/jpf/sc/State;)V</methods>
+                <methods xsi:type="java:java.lang.String">setEndState()V</methods>
+                <methods xsi:type="java:java.lang.String">setEndState(Lgov/nasa/jpf/sc/State;)V</methods>
+                <methods xsi:type="java:java.lang.String">logEvent(Ljava/lang/String;Lgov/nasa/jpf/sc/State;ILjava/lang/String;[Ljava/lang/Object;)V</methods>
+                <methods xsi:type="java:java.lang.String">sendEvent(Lgov/nasa/jpf/sc/State;ILjava/lang/String;[Ljava/lang/Object;)V</methods>
+                <methods xsi:type="java:java.lang.String">sendEvent(Lgov/nasa/jpf/sc/State;Ljava/lang/String;[Ljava/lang/Object;)V</methods>
+                <methods xsi:type="java:java.lang.String">sendEvent(Ljava/lang/String;[Ljava/lang/Object;)V</methods>
+                <methods xsi:type="java:java.lang.String">getPendingEvent()Lgov/nasa/jpf/sc/EventSpec;</methods>
+                <methods xsi:type="java:java.lang.String">getPendingEventQueue()Lgov/nasa/jpf/sc/PendingEventQueue;</methods>
+                <methods xsi:type="java:java.lang.String">getWaitEvent()Lgov/nasa/jpf/sc/EventSpec;</methods>
+                <methods xsi:type="java:java.lang.String">removeWaitEvent()V</methods>
+                <methods xsi:type="java:java.lang.String">receiveEvent(Ljava/lang/String;[Ljava/lang/String;)V</methods>
+                <methods xsi:type="java:java.lang.String">getEventId()Ljava/lang/String;</methods>
+                <methods xsi:type="java:java.lang.String">getEventArguments()[Ljava/lang/Object;</methods>
+                <methods xsi:type="java:java.lang.String">log(Ljava/lang/String;)V</methods>
+                <methods xsi:type="java:java.lang.String">log(Ljava/lang/String;Ljava/lang/String;)V</methods>
+                <methods xsi:type="java:java.lang.String">log(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V</methods>
+                <methods xsi:type="java:java.lang.String">log(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V</methods>
+                <methods xsi:type="java:java.lang.String">logAppend(Ljava/lang/String;)V</methods>
+                <methods xsi:type="java:java.lang.String">log()V</methods>
+                <methods xsi:type="java:java.lang.String">getInitStates()[Lgov/nasa/jpf/sc/State;</methods>
+                <methods xsi:type="java:java.lang.String">&lt;clinit&gt;()V</methods>
+                <name>gov/nasa/jpf/sc/State</name>
+                <layer>classes</layer>
+                <super-name>java/lang/Object</super-name>
+                <project>jpf-statechart</project>
+            </info>
+        </value>
+    </model-class>
+    <model-class xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/sc/State$NoSubState</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.ModelClassInfo">
+            <std-name>unknown</std-name>
+            <type>ModelClass</type>
+            <info flags="9729">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-statechart\build\classes\gov\nasa\jpf\sc\State$NoSubState.class</location>
+                <name>gov/nasa/jpf/sc/State$NoSubState</name>
+                <layer>classes</layer>
+                <super-name>java/lang/Object</super-name>
+                <interfaces xsi:type="java:java.lang.String">java/lang/annotation/Annotation</interfaces>
+                <project>jpf-statechart</project>
+            </info>
+        </value>
+    </model-class>
+    <model-class xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/sc/State$Params</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.ModelClassInfo">
+            <std-name>unknown</std-name>
+            <type>ModelClass</type>
+            <info flags="9729">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-statechart\build\classes\gov\nasa\jpf\sc\State$Params.class</location>
+                <methods xsi:type="java:java.lang.String">value()Ljava/lang/String;</methods>
+                <name>gov/nasa/jpf/sc/State$Params</name>
+                <layer>classes</layer>
+                <super-name>java/lang/Object</super-name>
+                <interfaces xsi:type="java:java.lang.String">java/lang/annotation/Annotation</interfaces>
+                <project>jpf-statechart</project>
+            </info>
+        </value>
+    </model-class>
+    <model-class xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/sc/StateMachine</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.ModelClassInfo">
+            <std-name>unknown</std-name>
+            <type>ModelClass</type>
+            <info flags="33">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-statechart\build\classes\gov\nasa\jpf\sc\StateMachine.class</location>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;()V</methods>
+                <methods xsi:type="java:java.lang.String">initialize([Ljava/lang/String;)Z</methods>
+                <methods xsi:type="java:java.lang.String">getEnablingEvent()Z</methods>
+                <methods xsi:type="java:java.lang.String">executeTrigger(Lgov/nasa/jpf/sc/State;)V</methods>
+                <methods xsi:type="java:java.lang.String">setEnablingEventProcessed()V</methods>
+                <methods xsi:type="java:java.lang.String">startRun()V</methods>
+                <methods xsi:type="java:java.lang.String">visitState(Lgov/nasa/jpf/sc/State;)V</methods>
+                <methods xsi:type="java:java.lang.String">checkTermination()V</methods>
+                <methods xsi:type="java:java.lang.String">checkStep(I)V</methods>
+                <methods xsi:type="java:java.lang.String">log(Ljava/lang/String;)V</methods>
+                <methods xsi:type="java:java.lang.String">log(Ljava/lang/String;Ljava/lang/String;)V</methods>
+                <methods xsi:type="java:java.lang.String">log(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V</methods>
+                <methods xsi:type="java:java.lang.String">log(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V</methods>
+                <methods xsi:type="java:java.lang.String">logAppend(Ljava/lang/String;)V</methods>
+                <methods xsi:type="java:java.lang.String">log()V</methods>
+                <methods xsi:type="java:java.lang.String">main([Ljava/lang/String;)V</methods>
+                <methods xsi:type="java:java.lang.String">getArgsLength()I</methods>
+                <methods xsi:type="java:java.lang.String">getArg(I)Ljava/lang/String;</methods>
+                <methods xsi:type="java:java.lang.String">printUsage()V</methods>
+                <methods xsi:type="java:java.lang.String">executeEntryActions(Lgov/nasa/jpf/sc/State;Lgov/nasa/jpf/sc/State;)V</methods>
+                <methods xsi:type="java:java.lang.String">executeEntryAction(Lgov/nasa/jpf/sc/State;)V</methods>
+                <methods xsi:type="java:java.lang.String">executeDoAction(Lgov/nasa/jpf/sc/State;)V</methods>
+                <methods xsi:type="java:java.lang.String">executeExitAction(Lgov/nasa/jpf/sc/State;)V</methods>
+                <methods xsi:type="java:java.lang.String">triggerFired(Lgov/nasa/jpf/sc/State;Lgov/nasa/jpf/sc/State;)V</methods>
+                <methods xsi:type="java:java.lang.String">initialize()V</methods>
+                <methods xsi:type="java:java.lang.String">step()Z</methods>
+                <methods xsi:type="java:java.lang.String">run()V</methods>
+                <methods xsi:type="java:java.lang.String">getStateNameList(Lgov/nasa/jpf/sc/State;)Ljava/lang/String;</methods>
+                <methods xsi:type="java:java.lang.String">getCurrentState()Lgov/nasa/jpf/sc/State;</methods>
+                <methods xsi:type="java:java.lang.String">hasActivePeers(Lgov/nasa/jpf/sc/State;)Z</methods>
+                <methods xsi:type="java:java.lang.String">updateActiveStates()Z</methods>
+                <methods xsi:type="java:java.lang.String">setMasterState(Lgov/nasa/jpf/sc/State;)V</methods>
+                <methods xsi:type="java:java.lang.String">growStateTable()V</methods>
+                <methods xsi:type="java:java.lang.String">registerState(Lgov/nasa/jpf/sc/State;)V</methods>
+                <methods xsi:type="java:java.lang.String">addNextActiveState(Lgov/nasa/jpf/sc/State;)V</methods>
+                <methods xsi:type="java:java.lang.String">setNextState(Lgov/nasa/jpf/sc/State;)V</methods>
+                <methods xsi:type="java:java.lang.String">setNextOrthogonalState(Lgov/nasa/jpf/sc/State;)V</methods>
+                <methods xsi:type="java:java.lang.String">setEndState(Lgov/nasa/jpf/sc/State;)V</methods>
+                <methods xsi:type="java:java.lang.String">hasNextState()Z</methods>
+                <methods xsi:type="java:java.lang.String">isInActiveStates(Lgov/nasa/jpf/sc/State;)Z</methods>
+                <methods xsi:type="java:java.lang.String">supportsSendEvent()Z</methods>
+                <methods xsi:type="java:java.lang.String">getEventPriority(Lgov/nasa/jpf/sc/State;Lgov/nasa/jpf/sc/State;Ljava/lang/String;[Ljava/lang/Object;)I</methods>
+                <methods xsi:type="java:java.lang.String">getEventId()Ljava/lang/String;</methods>
+                <methods xsi:type="java:java.lang.String">getEventArguments()[Ljava/lang/Object;</methods>
+                <methods xsi:type="java:java.lang.String">getMasterState()Lgov/nasa/jpf/sc/State;</methods>
+                <methods xsi:type="java:java.lang.String">getActiveStates()Lgov/nasa/jpf/sc/State;</methods>
+                <methods xsi:type="java:java.lang.String">printArgs()Ljava/lang/String;</methods>
+                <methods xsi:type="java:java.lang.String">createMasterState(Ljava/lang/String;)Lgov/nasa/jpf/sc/State;</methods>
+                <methods xsi:type="java:java.lang.String">showState(Lgov/nasa/jpf/sc/State;I)V</methods>
+                <methods xsi:type="java:java.lang.String">showMachine()V</methods>
+                <methods xsi:type="java:java.lang.String">&lt;clinit&gt;()V</methods>
+                <name>gov/nasa/jpf/sc/StateMachine</name>
+                <layer>classes</layer>
+                <super-name>java/lang/Object</super-name>
+                <interfaces xsi:type="java:java.lang.String">java/lang/Runnable</interfaces>
+                <project>jpf-statechart</project>
+            </info>
+        </value>
+    </model-class>
+    <native-peer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/jvm/JPF_gov_nasa_jpf_sc_State</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.NativePeerInfo">
+            <model-name>gov/nasa/jpf/sc/State</model-name>
+            <model-methods xsi:type="java:java.lang.String">&lt;init&gt;()V</model-methods>
+            <model-methods xsi:type="java:java.lang.String">setStateFields()V</model-methods>
+            <model-methods xsi:type="java:java.lang.String">setSpecialMethods()V</model-methods>
+            <type>NativePeerClass</type>
+            <info flags="33">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-statechart\build\peers\gov\nasa\jpf\jvm\JPF_gov_nasa_jpf_sc_State.class</location>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;()V</methods>
+                <methods xsi:type="java:java.lang.String">init(Lgov/nasa/jpf/Config;)V</methods>
+                <methods xsi:type="java:java.lang.String">setStateFields____V(Lgov/nasa/jpf/jvm/MJIEnv;I)V</methods>
+                <methods xsi:type="java:java.lang.String">setSpecialMethods____V(Lgov/nasa/jpf/jvm/MJIEnv;I)V</methods>
+                <name>gov/nasa/jpf/jvm/JPF_gov_nasa_jpf_sc_State</name>
+                <layer>peers</layer>
+                <super-name>java/lang/Object</super-name>
+                <project>jpf-statechart</project>
+            </info>
+        </value>
+    </native-peer>
+    <native-peer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/jvm/JPF_gov_nasa_jpf_sc_StateMachine</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.NativePeerInfo">
+            <model-name>gov/nasa/jpf/sc/StateMachine</model-name>
+            <model-methods xsi:type="java:java.lang.String">&lt;init&gt;()V</model-methods>
+            <model-methods xsi:type="java:java.lang.String">initialize([Ljava/lang/String;)Z</model-methods>
+            <model-methods xsi:type="java:java.lang.String">getEnablingEvent()Z</model-methods>
+            <model-methods xsi:type="java:java.lang.String">getEventId()Ljava/lang/String;</model-methods>
+            <model-methods xsi:type="java:java.lang.String">getEventArguments()[Ljava/lang/Object;</model-methods>
+            <model-methods xsi:type="java:java.lang.String">updateActiveStates()Z</model-methods>
+            <model-methods xsi:type="java:java.lang.String">supportsSendEvent()Z</model-methods>
+            <model-methods xsi:type="java:java.lang.String">&lt;clinit&gt;()V</model-methods>
+            <type>NativePeerClass</type>
+            <info flags="33">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-statechart\build\peers\gov\nasa\jpf\jvm\JPF_gov_nasa_jpf_sc_StateMachine.class</location>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;()V</methods>
+                <methods xsi:type="java:java.lang.String">getMachine(Lgov/nasa/jpf/jvm/MJIEnv;I)Lgov/nasa/jpf/jvm/NativeStateMachine;</methods>
+                <methods xsi:type="java:java.lang.String">createNativeStateMachine(Lgov/nasa/jpf/Config;)Lgov/nasa/jpf/jvm/NativeStateMachine;</methods>
+                <methods xsi:type="java:java.lang.String">$clinit(Lgov/nasa/jpf/jvm/MJIEnv;I)V</methods>
+                <methods xsi:type="java:java.lang.String">initialize___3Ljava_lang_String_2__Z(Lgov/nasa/jpf/jvm/MJIEnv;II)Z</methods>
+                <methods xsi:type="java:java.lang.String">startRun____(Lgov/nasa/jpf/jvm/MJIEnv;I)V</methods>
+                <methods xsi:type="java:java.lang.String">visitState__Lgov_nasa_jpf_sc_State_2__(Lgov/nasa/jpf/jvm/MJIEnv;II)V</methods>
+                <methods xsi:type="java:java.lang.String">checkTermination____(Lgov/nasa/jpf/jvm/MJIEnv;I)V</methods>
+                <methods xsi:type="java:java.lang.String">checkStep__I__(Lgov/nasa/jpf/jvm/MJIEnv;II)V</methods>
+                <methods xsi:type="java:java.lang.String">getEventPriority(Lgov/nasa/jpf/jvm/MJIEnv;IIIII)I</methods>
+                <methods xsi:type="java:java.lang.String">getEnablingEvent____Z(Lgov/nasa/jpf/jvm/MJIEnv;I)Z</methods>
+                <methods xsi:type="java:java.lang.String">setEnablingEventProcessed____(Lgov/nasa/jpf/jvm/MJIEnv;I)V</methods>
+                <methods xsi:type="java:java.lang.String">triggerFired__Lgov_nasa_jpf_sc_State_2Lgov_nasa_jpf_sc_State_2__(Lgov/nasa/jpf/jvm/MJIEnv;III)V</methods>
+                <methods xsi:type="java:java.lang.String">executeEntryAction__Lgov_nasa_jpf_sc_State_2__(Lgov/nasa/jpf/jvm/MJIEnv;II)V</methods>
+                <methods xsi:type="java:java.lang.String">executeExitAction__Lgov_nasa_jpf_sc_State_2__(Lgov/nasa/jpf/jvm/MJIEnv;II)V</methods>
+                <methods xsi:type="java:java.lang.String">executeDoAction__Lgov_nasa_jpf_sc_State_2__(Lgov/nasa/jpf/jvm/MJIEnv;II)V</methods>
+                <methods xsi:type="java:java.lang.String">executeTrigger__Lgov_nasa_jpf_sc_State_2__(Lgov/nasa/jpf/jvm/MJIEnv;II)V</methods>
+                <methods xsi:type="java:java.lang.String">getEventId____Ljava_lang_String_2(Lgov/nasa/jpf/jvm/MJIEnv;I)I</methods>
+                <methods xsi:type="java:java.lang.String">getEventArguments_____3Ljava_lang_Object_2(Lgov/nasa/jpf/jvm/MJIEnv;I)I</methods>
+                <methods xsi:type="java:java.lang.String">updateActiveStates____Z(Lgov/nasa/jpf/jvm/MJIEnv;I)Z</methods>
+                <methods xsi:type="java:java.lang.String">supportsSendEvent____Z(Lgov/nasa/jpf/jvm/MJIEnv;I)Z</methods>
+                <methods xsi:type="java:java.lang.String">log__Ljava_lang_String_2__(Lgov/nasa/jpf/jvm/MJIEnv;II)V</methods>
+                <methods xsi:type="java:java.lang.String">log__Ljava_lang_String_2Ljava_lang_String_2__(Lgov/nasa/jpf/jvm/MJIEnv;III)V</methods>
+                <methods xsi:type="java:java.lang.String">log__Ljava_lang_String_2Ljava_lang_String_2Ljava_lang_String_2__(Lgov/nasa/jpf/jvm/MJIEnv;IIII)V</methods>
+                <methods xsi:type="java:java.lang.String">log__Ljava_lang_String_2Ljava_lang_String_2Ljava_lang_String_2Ljava_lang_String_2__(Lgov/nasa/jpf/jvm/MJIEnv;IIIII)V</methods>
+                <methods xsi:type="java:java.lang.String">getLogBuffer(Lgov/nasa/jpf/jvm/ThreadInfo;)Ljava/lang/StringBuilder;</methods>
+                <methods xsi:type="java:java.lang.String">logAppend__Ljava_lang_String_2__(Lgov/nasa/jpf/jvm/MJIEnv;II)V</methods>
+                <methods xsi:type="java:java.lang.String">log____(Lgov/nasa/jpf/jvm/MJIEnv;I)V</methods>
+                <methods xsi:type="java:java.lang.String">&lt;clinit&gt;()V</methods>
+                <name>gov/nasa/jpf/jvm/JPF_gov_nasa_jpf_sc_StateMachine</name>
+                <layer>peers</layer>
+                <super-name>java/lang/Object</super-name>
+                <project>jpf-statechart</project>
+            </info>
+        </value>
+    </native-peer>
+    <native-peer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/jvm/JPF_gov_nasa_jpf_sc_StateMachine$Listener</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.NativePeerInfo">
+            <model-name>unknown</model-name>
+            <type>NativePeerClass</type>
+            <info flags="32">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-statechart\build\peers\gov\nasa\jpf\jvm\JPF_gov_nasa_jpf_sc_StateMachine$Listener.class</location>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;()V</methods>
+                <methods xsi:type="java:java.lang.String">isSCEventState(Lgov/nasa/jpf/search/Search;)Z</methods>
+                <methods xsi:type="java:java.lang.String">stateAdvanced(Lgov/nasa/jpf/search/Search;)V</methods>
+                <methods xsi:type="java:java.lang.String">stateBacktracked(Lgov/nasa/jpf/search/Search;)V</methods>
+                <methods xsi:type="java:java.lang.String">searchFinished(Lgov/nasa/jpf/search/Search;)V</methods>
+                <name>gov/nasa/jpf/jvm/JPF_gov_nasa_jpf_sc_StateMachine$Listener</name>
+                <layer>peers</layer>
+                <super-name>gov/nasa/jpf/ListenerAdapter</super-name>
+                <project>jpf-statechart</project>
+            </info>
+        </value>
+    </native-peer>
+    <native-peer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/jvm/NativeStateMachine</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.NativePeerInfo">
+            <model-name>unknown</model-name>
+            <type>NativePeerClass</type>
+            <info flags="33">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-statechart\build\peers\gov\nasa\jpf\jvm\NativeStateMachine.class</location>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;()V</methods>
+                <methods xsi:type="java:java.lang.String">getStateNames(Lgov/nasa/jpf/jvm/MJIEnv;I)[Ljava/lang/String;</methods>
+                <methods xsi:type="java:java.lang.String">getReEnteredStates(Lgov/nasa/jpf/jvm/MJIEnv;I)Ljava/util/BitSet;</methods>
+                <methods xsi:type="java:java.lang.String">isMatchingReceiver(Lgov/nasa/jpf/jvm/MJIEnv;ILgov/nasa/jpf/jvm/choice/sc/SCEvent;)Z</methods>
+                <methods xsi:type="java:java.lang.String">isMatchingMethod(Lgov/nasa/jpf/jvm/MethodInfo;Lgov/nasa/jpf/jvm/choice/sc/SCEvent;)Z</methods>
+                <methods xsi:type="java:java.lang.String">getCheckReferences(Lgov/nasa/jpf/Config;Ljava/lang/String;)[I</methods>
+                <methods xsi:type="java:java.lang.String">getStateName(Lgov/nasa/jpf/jvm/MJIEnv;I)Ljava/lang/String;</methods>
+                <methods xsi:type="java:java.lang.String">executeStateMethod(Lgov/nasa/jpf/jvm/MJIEnv;IILjava/lang/String;Z)V</methods>
+                <methods xsi:type="java:java.lang.String">pushArgs(Lgov/nasa/jpf/jvm/MJIEnv;Lgov/nasa/jpf/jvm/StackFrame;[Ljava/lang/Object;)V</methods>
+                <methods xsi:type="java:java.lang.String">logActive(Lgov/nasa/jpf/jvm/MJIEnv;I)V</methods>
+                <methods xsi:type="java:java.lang.String">logEvent(Lgov/nasa/jpf/jvm/choice/sc/SCEvent;)V</methods>
+                <methods xsi:type="java:java.lang.String">logEventProcessed(Lgov/nasa/jpf/jvm/choice/sc/SCEvent;)V</methods>
+                <methods xsi:type="java:java.lang.String">logTrigger(Lgov/nasa/jpf/jvm/MJIEnv;ILgov/nasa/jpf/jvm/MethodInfo;)V</methods>
+                <methods xsi:type="java:java.lang.String">getAlphabet(Lgov/nasa/jpf/jvm/MJIEnv;Lgov/nasa/jpf/jvm/ClassInfo;)Ljava/util/ArrayList;</methods>
+                <methods xsi:type="java:java.lang.String">getActiveAlphabet(Lgov/nasa/jpf/jvm/MJIEnv;ILgov/nasa/jpf/util/StringSetMatcher;Lgov/nasa/jpf/util/StringSetMatcher;)Ljava/util/ArrayList;</methods>
+                <methods xsi:type="java:java.lang.String">onlyBooleanArguments([Ljava/lang/String;)Z</methods>
+                <methods xsi:type="java:java.lang.String">getParamValuesFromAnnotation(Lgov/nasa/jpf/jvm/MJIEnv;Lgov/nasa/jpf/jvm/MethodInfo;)[Ljava/lang/String;</methods>
+                <methods xsi:type="java:java.lang.String">wasGuardedCompletionStep(Lgov/nasa/jpf/jvm/MJIEnv;I)Z</methods>
+                <methods xsi:type="java:java.lang.String">checkEvent(Lgov/nasa/jpf/jvm/MJIEnv;ILgov/nasa/jpf/jvm/choice/sc/SCEvent;Z)Z</methods>
+                <methods xsi:type="java:java.lang.String">hasCompletionTrigger(Lgov/nasa/jpf/jvm/MJIEnv;I)Z</methods>
+                <methods xsi:type="java:java.lang.String">hasTimeTrigger(Lgov/nasa/jpf/jvm/MJIEnv;I)Z</methods>
+                <methods xsi:type="java:java.lang.String">createCGFromEvents(Ljava/lang/String;Ljava/util/List;)Lgov/nasa/jpf/jvm/choice/sc/SCEventGenerator;</methods>
+                <methods xsi:type="java:java.lang.String">createSCEventFromPending(Lgov/nasa/jpf/jvm/MJIEnv;II)Lgov/nasa/jpf/jvm/choice/sc/SCEvent;</methods>
+                <methods xsi:type="java:java.lang.String">getFirstTopPriorityPendingEvent(Lgov/nasa/jpf/jvm/MJIEnv;I)Lgov/nasa/jpf/jvm/choice/sc/SCEvent;</methods>
+                <methods xsi:type="java:java.lang.String">getAllTopPriorityPendingEvents(Lgov/nasa/jpf/jvm/MJIEnv;I)Ljava/util/ArrayList;</methods>
+                <methods xsi:type="java:java.lang.String">addTopPriorityPendingEvent(Lgov/nasa/jpf/jvm/MJIEnv;Ljava/util/ArrayList;I)V</methods>
+                <methods xsi:type="java:java.lang.String">addFirstParentChainPendingEvent(Lgov/nasa/jpf/jvm/MJIEnv;Ljava/util/ArrayList;I)V</methods>
+                <methods xsi:type="java:java.lang.String">addParentChainPendingEventSets(Lgov/nasa/jpf/jvm/MJIEnv;Ljava/util/ArrayList;I)V</methods>
+                <methods xsi:type="java:java.lang.String">addPendingEvent(Lgov/nasa/jpf/jvm/MJIEnv;Ljava/util/ArrayList;I)V</methods>
+                <methods xsi:type="java:java.lang.String">addPendingEventSet(Lgov/nasa/jpf/jvm/MJIEnv;Ljava/util/ArrayList;I)V</methods>
+                <methods xsi:type="java:java.lang.String">createCGFromPendingEvents(Ljava/lang/String;Lgov/nasa/jpf/jvm/MJIEnv;I)Lgov/nasa/jpf/jvm/choice/sc/SCEventGenerator;</methods>
+                <methods xsi:type="java:java.lang.String">getEventPriority(Lgov/nasa/jpf/jvm/MJIEnv;IIIII)I</methods>
+                <methods xsi:type="java:java.lang.String">createCGFromAlphabet(Ljava/lang/String;Lgov/nasa/jpf/jvm/MJIEnv;I)Lgov/nasa/jpf/jvm/choice/sc/SCEventGenerator;</methods>
+                <methods xsi:type="java:java.lang.String">createCGFromAlphabet(Ljava/lang/String;Lgov/nasa/jpf/jvm/MJIEnv;ILgov/nasa/jpf/util/StringSetMatcher;Lgov/nasa/jpf/util/StringSetMatcher;)Lgov/nasa/jpf/jvm/choice/sc/SCEventGenerator;</methods>
+                <methods xsi:type="java:java.lang.String">initialize(Lgov/nasa/jpf/jvm/MJIEnv;II)Z</methods>
+                <methods xsi:type="java:java.lang.String">startRun(Lgov/nasa/jpf/jvm/MJIEnv;I)V</methods>
+                <methods xsi:type="java:java.lang.String">showState(Lgov/nasa/jpf/jvm/MJIEnv;II)V</methods>
+                <methods xsi:type="java:java.lang.String">showMachine(Lgov/nasa/jpf/jvm/MJIEnv;I)V</methods>
+                <methods xsi:type="java:java.lang.String">visitState(Lgov/nasa/jpf/jvm/MJIEnv;II)V</methods>
+                <methods xsi:type="java:java.lang.String">checkTermination(Lgov/nasa/jpf/jvm/MJIEnv;I)V</methods>
+                <methods xsi:type="java:java.lang.String">checkStep(Lgov/nasa/jpf/jvm/MJIEnv;II)V</methods>
+                <methods xsi:type="java:java.lang.String">getEnablingEvent(Lgov/nasa/jpf/jvm/MJIEnv;I)Z</methods>
+                <methods xsi:type="java:java.lang.String">setEnablingEventProcessed(Lgov/nasa/jpf/jvm/MJIEnv;I)V</methods>
+                <methods xsi:type="java:java.lang.String">triggerFired(Lgov/nasa/jpf/jvm/MJIEnv;III)V</methods>
+                <methods xsi:type="java:java.lang.String">executeEntryAction(Lgov/nasa/jpf/jvm/MJIEnv;II)V</methods>
+                <methods xsi:type="java:java.lang.String">executeExitAction(Lgov/nasa/jpf/jvm/MJIEnv;II)V</methods>
+                <methods xsi:type="java:java.lang.String">executeDoAction(Lgov/nasa/jpf/jvm/MJIEnv;II)V</methods>
+                <methods xsi:type="java:java.lang.String">checkUnBlocked(Lgov/nasa/jpf/jvm/MJIEnv;ILgov/nasa/jpf/jvm/MethodInfo;)Z</methods>
+                <methods xsi:type="java:java.lang.String">executeTrigger(Lgov/nasa/jpf/jvm/MJIEnv;II)V</methods>
+                <methods xsi:type="java:java.lang.String">getEventId(Lgov/nasa/jpf/jvm/MJIEnv;I)I</methods>
+                <methods xsi:type="java:java.lang.String">getEventArguments(Lgov/nasa/jpf/jvm/MJIEnv;I)I</methods>
+                <methods xsi:type="java:java.lang.String">updateActiveStates(Lgov/nasa/jpf/jvm/MJIEnv;I)Z</methods>
+                <methods xsi:type="java:java.lang.String">supportsSendEvent(Lgov/nasa/jpf/jvm/MJIEnv;I)Z</methods>
+                <methods xsi:type="java:java.lang.String">&lt;clinit&gt;()V</methods>
+                <name>gov/nasa/jpf/jvm/NativeStateMachine</name>
+                <layer>peers</layer>
+                <super-name>java/lang/Object</super-name>
+                <project>jpf-statechart</project>
+            </info>
+        </value>
+    </native-peer>
+</jpf-components>

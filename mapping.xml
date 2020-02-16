@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE mapping PUBLIC "-//EXOLAB/Castor Object Mapping DTD Version 1.0//EN" "http://castor.exolab.org/mapping.dtd">
+
+<mapping>
+  <description>Mapping file for Java(TM) Pathfinder autodoc types tool.</description>
+  
+  <!-- mapping for class Components -->
+  <class name="gov.nasa.jpf.autodoc.types.info.CollectedInfo">
+    <map-to xml="jpf-components" />
+    
+    <field name="subtypes" type="gov.nasa.jpf.autodoc.types.info.SubtypeInfo" collection="map">
+      <bind-xml name="subtype" />
+    </field>
+    
+    <field name="models" type="gov.nasa.jpf.autodoc.types.info.ModelClassInfo" collection="map">
+      <bind-xml name="model-class" />
+    </field>
+    
+    <field name="peers" type="gov.nasa.jpf.autodoc.types.info.NativePeerInfo" collection="map">
+      <bind-xml name="native-peer" />
+    </field>
+  </class>
+</mapping>

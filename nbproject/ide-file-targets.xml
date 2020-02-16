@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir=".." name="jpf-autodoc-types-IDE">
+
+    <property file="${user.home}/.jpf/site.properties"/>
+
+    <path id="base.path">
+        <pathelement location="build/main"/>
+        <fileset dir=".">
+            <include name="lib/*.jar"/>
+        </fileset>
+    </path>
+    
+    <sourcepath id="source.path">
+      <pathelement location="src/main"/>
+    </sourcepath>
+
+    <!-- (more info: http://www.netbeans.org/kb/articles/freeform-config.html#runsingle) -->
+    <target name="run-selected-main">
+        <fail unless="run.class">Must set property 'run.class'</fail>
+        <ant antfile="build.xml" inheritall="false" target="compile"/>
+        <input addproperty="arg.input" message="please enter arguments"/>
+        <java classname="${run.class}" failonerror="true" fork="true">
+            <classpath>
+                <path refid="base.path"/>
+            </classpath>
+            <arg line="${arg.input}"/>
+        </java>
+    </target>
+    
+    <!-- 'test' targets -->
+    <target name="test-project">
+        <!-- need to set the formatter 'usefile' attribute
+             or the NB test runner will not show any tests -->
+        <property name="junit.usefile" value="false"/>
+        <ant antfile="build.xml" inheritall="true" target="test"/>
+    </target>
+    
+    <target name="run-selected-test">
+        <fail unless="run.class">Must set property 'run.class'</fail>
+        <ant antfile="build.xml" inheritall="false" target="compile"/>
+        <input message="please enter arguments" addproperty="arg.input"/>
+        <java classname="${run.class}" failonerror="true" fork="true">
+            <classpath>
+                <pathelement location="build/tests"/>
+                <path refid="base.path"/>
+            </classpath>
+            <arg line="${arg.input}"/>
+        </java>
+    </target>
+</project>

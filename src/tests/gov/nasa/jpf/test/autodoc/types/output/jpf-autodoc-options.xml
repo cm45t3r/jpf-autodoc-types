@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jpf-components>
+    <subtype xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/listener/CoverageAnalyzer</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.SubtypeInfo">
+            <ancestors xsi:type="java:java.lang.String">gov/nasa/jpf/ListenerAdapter</ancestors>
+            <super-methods xsi:type="java:java.lang.String">classLoaded(Lgov/nasa/jpf/jvm/JVM;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">instructionExecuted(Lgov/nasa/jpf/jvm/JVM;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">choiceGeneratorSet(Lgov/nasa/jpf/jvm/JVM;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">publishFinished(Lgov/nasa/jpf/report/Publisher;)V</super-methods>
+            <type>Listener</type>
+            <info flags="33">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-autodoc-options\build\main\gov\nasa\jpf\listener\CoverageAnalyzer.class</location>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;(Lgov/nasa/jpf/Config;Lgov/nasa/jpf/JPF;)V</methods>
+                <methods xsi:type="java:java.lang.String">getCoverageCandidates()V</methods>
+                <methods xsi:type="java:java.lang.String">addClassEntry(Ljava/lang/String;)V</methods>
+                <methods xsi:type="java:java.lang.String">isAnalyzedClass(Ljava/lang/String;)Z</methods>
+                <methods xsi:type="java:java.lang.String">traverseDir(Ljava/io/File;Ljava/lang/String;)V</methods>
+                <methods xsi:type="java:java.lang.String">traverseJar(Ljava/io/File;)V</methods>
+                <methods xsi:type="java:java.lang.String">getGlobalRequirementsMethods()Ljava/util/HashMap;</methods>
+                <methods xsi:type="java:java.lang.String">computeTotalRequirementsMethods(Ljava/util/HashMap;)I</methods>
+                <methods xsi:type="java:java.lang.String">computeCoverages(Ljava/lang/String;Ljava/util/List;Lgov/nasa/jpf/listener/CoverageAnalyzer$Coverage;Lgov/nasa/jpf/listener/CoverageAnalyzer$Coverage;Lgov/nasa/jpf/listener/CoverageAnalyzer$Coverage;Lgov/nasa/jpf/listener/CoverageAnalyzer$Coverage;Lgov/nasa/jpf/listener/CoverageAnalyzer$Coverage;Lgov/nasa/jpf/listener/CoverageAnalyzer$Coverage;)V</methods>
+                <methods xsi:type="java:java.lang.String">classLoaded(Lgov/nasa/jpf/jvm/JVM;)V</methods>
+                <methods xsi:type="java:java.lang.String">getMethodCoverage(Lgov/nasa/jpf/jvm/JVM;)Lgov/nasa/jpf/listener/CoverageAnalyzer$MethodCoverage;</methods>
+                <methods xsi:type="java:java.lang.String">updateRequirementsCoverage([Ljava/lang/String;Lgov/nasa/jpf/listener/CoverageAnalyzer$MethodCoverage;)V</methods>
+                <methods xsi:type="java:java.lang.String">getRequirementsAnnotation(Lgov/nasa/jpf/jvm/MethodInfo;)Lgov/nasa/jpf/jvm/AnnotationInfo;</methods>
+                <methods xsi:type="java:java.lang.String">instructionExecuted(Lgov/nasa/jpf/jvm/JVM;)V</methods>
+                <methods xsi:type="java:java.lang.String">choiceGeneratorSet(Lgov/nasa/jpf/jvm/JVM;)V</methods>
+                <methods xsi:type="java:java.lang.String">publishFinished(Lgov/nasa/jpf/report/Publisher;)V</methods>
+                <methods xsi:type="java:java.lang.String">access$000(Lgov/nasa/jpf/listener/CoverageAnalyzer;)Ljava/util/ArrayList;</methods>
+                <methods xsi:type="java:java.lang.String">access$100(Lgov/nasa/jpf/listener/CoverageAnalyzer;Ljava/lang/String;Ljava/util/List;Lgov/nasa/jpf/listener/CoverageAnalyzer$Coverage;Lgov/nasa/jpf/listener/CoverageAnalyzer$Coverage;Lgov/nasa/jpf/listener/CoverageAnalyzer$Coverage;Lgov/nasa/jpf/listener/CoverageAnalyzer$Coverage;Lgov/nasa/jpf/listener/CoverageAnalyzer$Coverage;Lgov/nasa/jpf/listener/CoverageAnalyzer$Coverage;)V</methods>
+                <methods xsi:type="java:java.lang.String">access$200(Lgov/nasa/jpf/listener/CoverageAnalyzer;)Lgov/nasa/jpf/report/Publisher;</methods>
+                <methods xsi:type="java:java.lang.String">&lt;clinit&gt;()V</methods>
+                <name>gov/nasa/jpf/listener/CoverageAnalyzer</name>
+                <layer>main</layer>
+                <super-name>gov/nasa/jpf/ListenerAdapter</super-name>
+                <interfaces xsi:type="java:java.lang.String">gov/nasa/jpf/report/PublisherExtension</interfaces>
+                <project>jpf-autodoc-options</project>
+            </info>
+        </value>
+    </subtype>
+    <subtype xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/listener/OverlappingMethodAnalyzer</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.SubtypeInfo">
+            <ancestors xsi:type="java:java.lang.String">gov/nasa/jpf/listener/MethodAnalyzer</ancestors>
+            <ancestors xsi:type="java:java.lang.String">gov/nasa/jpf/ListenerAdapter</ancestors>
+            <super-methods xsi:type="java:java.lang.String">&lt;init&gt;(Lgov/nasa/jpf/Config;Lgov/nasa/jpf/JPF;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">getReturnOp(Lgov/nasa/jpf/listener/MethodAnalyzer$MethodOp;Z)Lgov/nasa/jpf/listener/MethodAnalyzer$MethodOp;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">isOpenExec(Ljava/util/HashMap;Lgov/nasa/jpf/listener/MethodAnalyzer$MethodOp;)Z</super-methods>
+            <super-methods xsi:type="java:java.lang.String">cleanUpOpenExec(Ljava/util/HashMap;Lgov/nasa/jpf/listener/MethodAnalyzer$MethodOp;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">addOpenExec(Ljava/util/HashMap;Lgov/nasa/jpf/listener/MethodAnalyzer$MethodOp;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">printOn(Ljava/io/PrintWriter;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">consolidateOp(Lgov/nasa/jpf/listener/MethodAnalyzer$MethodOp;)Lgov/nasa/jpf/listener/MethodAnalyzer$MethodOp;</super-methods>
+            <type>Listener</type>
+            <info flags="33">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-autodoc-options\build\main\gov\nasa\jpf\listener\OverlappingMethodAnalyzer.class</location>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;(Lgov/nasa/jpf/Config;Lgov/nasa/jpf/JPF;)V</methods>
+                <methods xsi:type="java:java.lang.String">getReturnOp(Lgov/nasa/jpf/listener/MethodAnalyzer$MethodOp;Z)Lgov/nasa/jpf/listener/MethodAnalyzer$MethodOp;</methods>
+                <methods xsi:type="java:java.lang.String">isOpenExec(Ljava/util/HashMap;Lgov/nasa/jpf/listener/MethodAnalyzer$MethodOp;)Z</methods>
+                <methods xsi:type="java:java.lang.String">cleanUpOpenExec(Ljava/util/HashMap;Lgov/nasa/jpf/listener/MethodAnalyzer$MethodOp;)V</methods>
+                <methods xsi:type="java:java.lang.String">addOpenExec(Ljava/util/HashMap;Lgov/nasa/jpf/listener/MethodAnalyzer$MethodOp;)V</methods>
+                <methods xsi:type="java:java.lang.String">printOn(Ljava/io/PrintWriter;)V</methods>
+                <methods xsi:type="java:java.lang.String">consolidateOp(Lgov/nasa/jpf/listener/MethodAnalyzer$MethodOp;)Lgov/nasa/jpf/listener/MethodAnalyzer$MethodOp;</methods>
+                <name>gov/nasa/jpf/listener/OverlappingMethodAnalyzer</name>
+                <layer>main</layer>
+                <super-name>gov/nasa/jpf/listener/MethodAnalyzer</super-name>
+                <project>jpf-autodoc-options</project>
+            </info>
+        </value>
+    </subtype>
+    <subtype xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/symbc/SymbolicInstructionFactory</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.SubtypeInfo">
+            <ancestors xsi:type="java:java.lang.String">gov/nasa/jpf/jvm/bytecode/InstructionFactory</ancestors>
+            <super-methods xsi:type="java:java.lang.String">setClassInfoContext(Lgov/nasa/jpf/jvm/ClassInfo;)V</super-methods>
+            <super-methods xsi:type="java:java.lang.String">tableswitch(III)Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">new_(Ljava/lang/String;)Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">lxor()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">lushr()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">lsub()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">lshr()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">lshl()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">lrem()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">lor()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">lookupswitch(II)Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">lneg()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">lmul()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">ldiv()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">lcmp()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">land()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">ladd()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">l2i()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">l2f()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">l2d()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">ixor()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">iushr()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">isub()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">ishr()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">ishl()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">irem()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">ior()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">invokevirtual(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">invokestatic(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">invokespecial(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">ineg()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">imul()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">iinc(II)Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">ifnull(I)Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">ifnonnull(I)Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">ifle(I)Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">ifgt(I)Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">ifge(I)Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">iflt(I)Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">ifne(I)Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">ifeq(I)Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">if_icmple(I)Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">if_icmpgt(I)Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">if_icmpge(I)Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">if_icmplt(I)Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">if_icmpne(I)Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">if_icmpeq(I)Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">idiv()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">iand()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">iadd()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">i2s()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">i2l()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">i2f()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">i2d()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">i2c()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">i2b()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">getstatic(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">getfield(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">fsub()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">frem()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">fneg()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">fmul()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">fdiv()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">fcmpl()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">fcmpg()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">fadd()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">f2l()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">f2i()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">f2d()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">dsub()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">drem()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">dneg()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">dmul()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">ddiv()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">dcmpl()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">dcmpg()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">dadd()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">d2l()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">d2i()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">d2f()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">aload_3()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">aload_2()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">aload_1()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">aload_0()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">aload(I)Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <type>InstructionFactory</type>
+            <info flags="33">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-autodoc-options\build\main\gov\nasa\jpf\symbc\SymbolicInstructionFactory.class</location>
+                <methods xsi:type="java:java.lang.String">aload(I)Lgov/nasa/jpf/jvm/bytecode/ALOAD;</methods>
+                <methods xsi:type="java:java.lang.String">aload_0()Lgov/nasa/jpf/jvm/bytecode/ALOAD;</methods>
+                <methods xsi:type="java:java.lang.String">aload_1()Lgov/nasa/jpf/jvm/bytecode/ALOAD;</methods>
+                <methods xsi:type="java:java.lang.String">aload_2()Lgov/nasa/jpf/jvm/bytecode/ALOAD;</methods>
+                <methods xsi:type="java:java.lang.String">aload_3()Lgov/nasa/jpf/jvm/bytecode/ALOAD;</methods>
+                <methods xsi:type="java:java.lang.String">iadd()Lgov/nasa/jpf/jvm/bytecode/IADD;</methods>
+                <methods xsi:type="java:java.lang.String">iand()Lgov/nasa/jpf/jvm/bytecode/IAND;</methods>
+                <methods xsi:type="java:java.lang.String">iinc(II)Lgov/nasa/jpf/jvm/bytecode/IINC;</methods>
+                <methods xsi:type="java:java.lang.String">isub()Lgov/nasa/jpf/jvm/bytecode/ISUB;</methods>
+                <methods xsi:type="java:java.lang.String">imul()Lgov/nasa/jpf/jvm/bytecode/IMUL;</methods>
+                <methods xsi:type="java:java.lang.String">ineg()Lgov/nasa/jpf/jvm/bytecode/INEG;</methods>
+                <methods xsi:type="java:java.lang.String">ifle(I)Lgov/nasa/jpf/jvm/bytecode/IFLE;</methods>
+                <methods xsi:type="java:java.lang.String">iflt(I)Lgov/nasa/jpf/jvm/bytecode/IFLT;</methods>
+                <methods xsi:type="java:java.lang.String">ifge(I)Lgov/nasa/jpf/jvm/bytecode/IFGE;</methods>
+                <methods xsi:type="java:java.lang.String">ifgt(I)Lgov/nasa/jpf/jvm/bytecode/IFGT;</methods>
+                <methods xsi:type="java:java.lang.String">ifeq(I)Lgov/nasa/jpf/jvm/bytecode/IFEQ;</methods>
+                <methods xsi:type="java:java.lang.String">ifne(I)Lgov/nasa/jpf/jvm/bytecode/IFNE;</methods>
+                <methods xsi:type="java:java.lang.String">invokestatic(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lgov/nasa/jpf/jvm/bytecode/INVOKESTATIC;</methods>
+                <methods xsi:type="java:java.lang.String">invokevirtual(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lgov/nasa/jpf/jvm/bytecode/INVOKEVIRTUAL;</methods>
+                <methods xsi:type="java:java.lang.String">invokespecial(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lgov/nasa/jpf/jvm/bytecode/INVOKESPECIAL;</methods>
+                <methods xsi:type="java:java.lang.String">if_icmpge(I)Lgov/nasa/jpf/jvm/bytecode/IF_ICMPGE;</methods>
+                <methods xsi:type="java:java.lang.String">if_icmpgt(I)Lgov/nasa/jpf/jvm/bytecode/IF_ICMPGT;</methods>
+                <methods xsi:type="java:java.lang.String">if_icmple(I)Lgov/nasa/jpf/jvm/bytecode/IF_ICMPLE;</methods>
+                <methods xsi:type="java:java.lang.String">if_icmplt(I)Lgov/nasa/jpf/jvm/bytecode/IF_ICMPLT;</methods>
+                <methods xsi:type="java:java.lang.String">idiv()Lgov/nasa/jpf/jvm/bytecode/IDIV;</methods>
+                <methods xsi:type="java:java.lang.String">ishl()Lgov/nasa/jpf/jvm/bytecode/ISHL;</methods>
+                <methods xsi:type="java:java.lang.String">ishr()Lgov/nasa/jpf/jvm/bytecode/ISHR;</methods>
+                <methods xsi:type="java:java.lang.String">iushr()Lgov/nasa/jpf/jvm/bytecode/IUSHR;</methods>
+                <methods xsi:type="java:java.lang.String">ixor()Lgov/nasa/jpf/jvm/bytecode/IXOR;</methods>
+                <methods xsi:type="java:java.lang.String">ior()Lgov/nasa/jpf/jvm/bytecode/IOR;</methods>
+                <methods xsi:type="java:java.lang.String">irem()Lgov/nasa/jpf/jvm/bytecode/IREM;</methods>
+                <methods xsi:type="java:java.lang.String">if_icmpeq(I)Lgov/nasa/jpf/jvm/bytecode/IF_ICMPEQ;</methods>
+                <methods xsi:type="java:java.lang.String">if_icmpne(I)Lgov/nasa/jpf/jvm/bytecode/IF_ICMPNE;</methods>
+                <methods xsi:type="java:java.lang.String">fadd()Lgov/nasa/jpf/jvm/bytecode/FADD;</methods>
+                <methods xsi:type="java:java.lang.String">fdiv()Lgov/nasa/jpf/jvm/bytecode/FDIV;</methods>
+                <methods xsi:type="java:java.lang.String">fmul()Lgov/nasa/jpf/jvm/bytecode/FMUL;</methods>
+                <methods xsi:type="java:java.lang.String">fneg()Lgov/nasa/jpf/jvm/bytecode/FNEG;</methods>
+                <methods xsi:type="java:java.lang.String">frem()Lgov/nasa/jpf/jvm/bytecode/FREM;</methods>
+                <methods xsi:type="java:java.lang.String">fsub()Lgov/nasa/jpf/jvm/bytecode/FSUB;</methods>
+                <methods xsi:type="java:java.lang.String">fcmpg()Lgov/nasa/jpf/jvm/bytecode/FCMPG;</methods>
+                <methods xsi:type="java:java.lang.String">fcmpl()Lgov/nasa/jpf/jvm/bytecode/FCMPL;</methods>
+                <methods xsi:type="java:java.lang.String">dadd()Lgov/nasa/jpf/jvm/bytecode/DADD;</methods>
+                <methods xsi:type="java:java.lang.String">dcmpg()Lgov/nasa/jpf/jvm/bytecode/DCMPG;</methods>
+                <methods xsi:type="java:java.lang.String">dcmpl()Lgov/nasa/jpf/jvm/bytecode/DCMPL;</methods>
+                <methods xsi:type="java:java.lang.String">ddiv()Lgov/nasa/jpf/jvm/bytecode/DDIV;</methods>
+                <methods xsi:type="java:java.lang.String">dmul()Lgov/nasa/jpf/jvm/bytecode/DMUL;</methods>
+                <methods xsi:type="java:java.lang.String">dneg()Lgov/nasa/jpf/jvm/bytecode/DNEG;</methods>
+                <methods xsi:type="java:java.lang.String">drem()Lgov/nasa/jpf/jvm/bytecode/DREM;</methods>
+                <methods xsi:type="java:java.lang.String">dsub()Lgov/nasa/jpf/jvm/bytecode/DSUB;</methods>
+                <methods xsi:type="java:java.lang.String">ladd()Lgov/nasa/jpf/jvm/bytecode/LADD;</methods>
+                <methods xsi:type="java:java.lang.String">land()Lgov/nasa/jpf/jvm/bytecode/LAND;</methods>
+                <methods xsi:type="java:java.lang.String">lcmp()Lgov/nasa/jpf/jvm/bytecode/LCMP;</methods>
+                <methods xsi:type="java:java.lang.String">ldiv()Lgov/nasa/jpf/jvm/bytecode/LDIV;</methods>
+                <methods xsi:type="java:java.lang.String">lmul()Lgov/nasa/jpf/jvm/bytecode/LMUL;</methods>
+                <methods xsi:type="java:java.lang.String">lneg()Lgov/nasa/jpf/jvm/bytecode/LNEG;</methods>
+                <methods xsi:type="java:java.lang.String">lor()Lgov/nasa/jpf/jvm/bytecode/LOR;</methods>
+                <methods xsi:type="java:java.lang.String">lrem()Lgov/nasa/jpf/jvm/bytecode/LREM;</methods>
+                <methods xsi:type="java:java.lang.String">lshl()Lgov/nasa/jpf/jvm/bytecode/LSHL;</methods>
+                <methods xsi:type="java:java.lang.String">lshr()Lgov/nasa/jpf/jvm/bytecode/LSHR;</methods>
+                <methods xsi:type="java:java.lang.String">lsub()Lgov/nasa/jpf/jvm/bytecode/LSUB;</methods>
+                <methods xsi:type="java:java.lang.String">lushr()Lgov/nasa/jpf/jvm/bytecode/LUSHR;</methods>
+                <methods xsi:type="java:java.lang.String">lxor()Lgov/nasa/jpf/jvm/bytecode/LXOR;</methods>
+                <methods xsi:type="java:java.lang.String">i2d()Lgov/nasa/jpf/jvm/bytecode/I2D;</methods>
+                <methods xsi:type="java:java.lang.String">d2i()Lgov/nasa/jpf/jvm/bytecode/D2I;</methods>
+                <methods xsi:type="java:java.lang.String">d2l()Lgov/nasa/jpf/jvm/bytecode/D2L;</methods>
+                <methods xsi:type="java:java.lang.String">i2f()Lgov/nasa/jpf/jvm/bytecode/I2F;</methods>
+                <methods xsi:type="java:java.lang.String">l2d()Lgov/nasa/jpf/jvm/bytecode/L2D;</methods>
+                <methods xsi:type="java:java.lang.String">l2f()Lgov/nasa/jpf/jvm/bytecode/L2F;</methods>
+                <methods xsi:type="java:java.lang.String">f2l()Lgov/nasa/jpf/jvm/bytecode/F2L;</methods>
+                <methods xsi:type="java:java.lang.String">f2i()Lgov/nasa/jpf/jvm/bytecode/F2I;</methods>
+                <methods xsi:type="java:java.lang.String">lookupswitch(II)Lgov/nasa/jpf/symbc/bytecode/SwitchInstruction;</methods>
+                <methods xsi:type="java:java.lang.String">tableswitch(III)Lgov/nasa/jpf/symbc/bytecode/SwitchInstruction;</methods>
+                <methods xsi:type="java:java.lang.String">d2f()Lgov/nasa/jpf/jvm/bytecode/D2F;</methods>
+                <methods xsi:type="java:java.lang.String">f2d()Lgov/nasa/jpf/jvm/bytecode/F2D;</methods>
+                <methods xsi:type="java:java.lang.String">i2b()Lgov/nasa/jpf/jvm/bytecode/I2B;</methods>
+                <methods xsi:type="java:java.lang.String">i2c()Lgov/nasa/jpf/jvm/bytecode/I2C;</methods>
+                <methods xsi:type="java:java.lang.String">i2s()Lgov/nasa/jpf/jvm/bytecode/I2S;</methods>
+                <methods xsi:type="java:java.lang.String">i2l()Lgov/nasa/jpf/jvm/bytecode/I2L;</methods>
+                <methods xsi:type="java:java.lang.String">l2i()Lgov/nasa/jpf/jvm/bytecode/L2I;</methods>
+                <methods xsi:type="java:java.lang.String">getfield(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lgov/nasa/jpf/jvm/bytecode/GETFIELD;</methods>
+                <methods xsi:type="java:java.lang.String">getstatic(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lgov/nasa/jpf/jvm/bytecode/GETSTATIC;</methods>
+                <methods xsi:type="java:java.lang.String">new_(Ljava/lang/String;)Lgov/nasa/jpf/jvm/bytecode/NEW;</methods>
+                <methods xsi:type="java:java.lang.String">ifnonnull(I)Lgov/nasa/jpf/jvm/bytecode/IFNONNULL;</methods>
+                <methods xsi:type="java:java.lang.String">ifnull(I)Lgov/nasa/jpf/jvm/bytecode/IFNULL;</methods>
+                <methods xsi:type="java:java.lang.String">setClassInfoContext(Lgov/nasa/jpf/jvm/ClassInfo;)V</methods>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;(Lgov/nasa/jpf/Config;)V</methods>
+                <methods xsi:type="java:java.lang.String">tableswitch(III)Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">new_(Ljava/lang/String;)Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">lxor()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">lushr()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">lsub()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">lshr()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">lshl()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">lrem()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">lor()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">lookupswitch(II)Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">lneg()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">lmul()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">ldiv()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">lcmp()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">land()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">ladd()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">l2i()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">l2f()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">l2d()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">ixor()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">iushr()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">isub()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">ishr()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">ishl()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">irem()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">ior()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">invokevirtual(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">invokestatic(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">invokespecial(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">ineg()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">imul()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">iinc(II)Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">ifnull(I)Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">ifnonnull(I)Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">ifle(I)Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">ifgt(I)Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">ifge(I)Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">iflt(I)Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">ifne(I)Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">ifeq(I)Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">if_icmple(I)Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">if_icmpgt(I)Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">if_icmpge(I)Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">if_icmplt(I)Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">if_icmpne(I)Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">if_icmpeq(I)Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">idiv()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">iand()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">iadd()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">i2s()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">i2l()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">i2f()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">i2d()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">i2c()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">i2b()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">getstatic(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">getfield(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">fsub()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">frem()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">fneg()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">fmul()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">fdiv()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">fcmpl()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">fcmpg()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">fadd()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">f2l()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">f2i()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">f2d()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">dsub()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">drem()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">dneg()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">dmul()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">ddiv()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">dcmpl()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">dcmpg()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">dadd()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">d2l()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">d2i()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">d2f()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">aload_3()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">aload_2()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">aload_1()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">aload_0()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">aload(I)Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">&lt;clinit&gt;()V</methods>
+                <name>gov/nasa/jpf/symbc/SymbolicInstructionFactory</name>
+                <layer>main</layer>
+                <super-name>gov/nasa/jpf/jvm/bytecode/InstructionFactory</super-name>
+                <project>jpf-autodoc-options</project>
+            </info>
+        </value>
+    </subtype>
+    <model-class xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/AnnotationProxyBase</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.ModelClassInfo">
+            <std-name>unknown</std-name>
+            <type>ModelClass</type>
+            <info flags="33">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-autodoc-options\build\classes\gov\nasa\jpf\AnnotationProxyBase.class</location>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;()V</methods>
+                <methods xsi:type="java:java.lang.String">annotationType()Ljava/lang/Class;</methods>
+                <methods xsi:type="java:java.lang.String">toString()Ljava/lang/String;</methods>
+                <name>gov/nasa/jpf/AnnotationProxyBase</name>
+                <layer>classes</layer>
+                <super-name>java/lang/Object</super-name>
+                <project>jpf-autodoc-options</project>
+            </info>
+        </value>
+    </model-class>
+    <model-class xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">java/io/FileInputStream</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.ModelClassInfo">
+            <std-name>java/io/FileInputStream</std-name>
+            <std-methods xsi:type="java:java.lang.String">&lt;init&gt;(Ljava/lang/String;)V</std-methods>
+            <std-methods xsi:type="java:java.lang.String">&lt;init&gt;(Ljava/io/File;)V</std-methods>
+            <std-methods xsi:type="java:java.lang.String">&lt;init&gt;(Ljava/io/FileDescriptor;)V</std-methods>
+            <std-methods xsi:type="java:java.lang.String">read([B)I</std-methods>
+            <std-methods xsi:type="java:java.lang.String">getChannel()Ljava/nio/channels/FileChannel;</std-methods>
+            <std-methods xsi:type="java:java.lang.String">read()I</std-methods>
+            <std-methods xsi:type="java:java.lang.String">read([BII)I</std-methods>
+            <std-methods xsi:type="java:java.lang.String">skip(J)J</std-methods>
+            <std-methods xsi:type="java:java.lang.String">available()I</std-methods>
+            <std-methods xsi:type="java:java.lang.String">close()V</std-methods>
+            <type>ModelClass</type>
+            <info flags="33">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-autodoc-options\build\classes\java\io\FileInputStream.class</location>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;(Ljava/lang/String;)V</methods>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;(Ljava/io/File;)V</methods>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;(Ljava/io/FileDescriptor;)V</methods>
+                <methods xsi:type="java:java.lang.String">read([B)I</methods>
+                <methods xsi:type="java:java.lang.String">getChannel()Ljava/nio/channels/FileChannel;</methods>
+                <methods xsi:type="java:java.lang.String">open(Ljava/lang/String;)Z</methods>
+                <methods xsi:type="java:java.lang.String">read()I</methods>
+                <methods xsi:type="java:java.lang.String">read([BII)I</methods>
+                <methods xsi:type="java:java.lang.String">skip(J)J</methods>
+                <methods xsi:type="java:java.lang.String">available()I</methods>
+                <methods xsi:type="java:java.lang.String">close()V</methods>
+                <name>java/io/FileInputStream</name>
+                <layer>classes</layer>
+                <super-name>java/io/InputStream</super-name>
+                <project>jpf-autodoc-options</project>
+            </info>
+        </value>
+    </model-class>
+    <model-class xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">java/util/regex/Matcher</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.ModelClassInfo">
+            <std-name>java/util/regex/Matcher</std-name>
+            <std-methods xsi:type="java:java.lang.String">&lt;init&gt;()V</std-methods>
+            <std-methods xsi:type="java:java.lang.String">&lt;init&gt;(Ljava/util/regex/Pattern;Ljava/lang/CharSequence;)V</std-methods>
+            <std-methods xsi:type="java:java.lang.String">pattern()Ljava/util/regex/Pattern;</std-methods>
+            <std-methods xsi:type="java:java.lang.String">reset()Ljava/util/regex/Matcher;</std-methods>
+            <std-methods xsi:type="java:java.lang.String">group()Ljava/lang/String;</std-methods>
+            <std-methods xsi:type="java:java.lang.String">group(I)Ljava/lang/String;</std-methods>
+            <std-methods xsi:type="java:java.lang.String">groupCount()I</std-methods>
+            <std-methods xsi:type="java:java.lang.String">reset(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;</std-methods>
+            <std-methods xsi:type="java:java.lang.String">matches()Z</std-methods>
+            <std-methods xsi:type="java:java.lang.String">find()Z</std-methods>
+            <std-methods xsi:type="java:java.lang.String">lookingAt()Z</std-methods>
+            <std-methods xsi:type="java:java.lang.String">start()I</std-methods>
+            <std-methods xsi:type="java:java.lang.String">start(I)I</std-methods>
+            <std-methods xsi:type="java:java.lang.String">end()I</std-methods>
+            <std-methods xsi:type="java:java.lang.String">end(I)I</std-methods>
+            <std-methods xsi:type="java:java.lang.String">hasTransparentBounds()Z</std-methods>
+            <std-methods xsi:type="java:java.lang.String">useTransparentBounds(Z)Ljava/util/regex/Matcher;</std-methods>
+            <std-methods xsi:type="java:java.lang.String">hasAnchoringBounds()Z</std-methods>
+            <std-methods xsi:type="java:java.lang.String">useAnchoringBounds(Z)Ljava/util/regex/Matcher;</std-methods>
+            <std-methods xsi:type="java:java.lang.String">regionStart()I</std-methods>
+            <std-methods xsi:type="java:java.lang.String">regionEnd()I</std-methods>
+            <std-methods xsi:type="java:java.lang.String">region(II)Ljava/util/regex/Matcher;</std-methods>
+            <std-methods xsi:type="java:java.lang.String">quoteReplacement(Ljava/lang/String;)Ljava/lang/String;</std-methods>
+            <std-methods xsi:type="java:java.lang.String">replaceAll(Ljava/lang/String;)Ljava/lang/String;</std-methods>
+            <std-methods xsi:type="java:java.lang.String">replaceFirst(Ljava/lang/String;)Ljava/lang/String;</std-methods>
+            <std-methods xsi:type="java:java.lang.String">toString()Ljava/lang/String;</std-methods>
+            <std-methods xsi:type="java:java.lang.String">hitEnd()Z</std-methods>
+            <std-methods xsi:type="java:java.lang.String">requireEnd()Z</std-methods>
+            <type>ModelClass</type>
+            <info flags="33">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-autodoc-options\build\classes\java\util\regex\Matcher.class</location>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;()V</methods>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;(Ljava/util/regex/Pattern;Ljava/lang/CharSequence;)V</methods>
+                <methods xsi:type="java:java.lang.String">pattern()Ljava/util/regex/Pattern;</methods>
+                <methods xsi:type="java:java.lang.String">register()V</methods>
+                <methods xsi:type="java:java.lang.String">reset()Ljava/util/regex/Matcher;</methods>
+                <methods xsi:type="java:java.lang.String">group()Ljava/lang/String;</methods>
+                <methods xsi:type="java:java.lang.String">group(I)Ljava/lang/String;</methods>
+                <methods xsi:type="java:java.lang.String">groupCount()I</methods>
+                <methods xsi:type="java:java.lang.String">reset(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;</methods>
+                <methods xsi:type="java:java.lang.String">matches()Z</methods>
+                <methods xsi:type="java:java.lang.String">find()Z</methods>
+                <methods xsi:type="java:java.lang.String">lookingAt()Z</methods>
+                <methods xsi:type="java:java.lang.String">start()I</methods>
+                <methods xsi:type="java:java.lang.String">start(I)I</methods>
+                <methods xsi:type="java:java.lang.String">end()I</methods>
+                <methods xsi:type="java:java.lang.String">end(I)I</methods>
+                <methods xsi:type="java:java.lang.String">hasTransparentBounds()Z</methods>
+                <methods xsi:type="java:java.lang.String">useTransparentBounds(Z)Ljava/util/regex/Matcher;</methods>
+                <methods xsi:type="java:java.lang.String">hasAnchoringBounds()Z</methods>
+                <methods xsi:type="java:java.lang.String">useAnchoringBounds(Z)Ljava/util/regex/Matcher;</methods>
+                <methods xsi:type="java:java.lang.String">regionStart()I</methods>
+                <methods xsi:type="java:java.lang.String">regionEnd()I</methods>
+                <methods xsi:type="java:java.lang.String">region(II)Ljava/util/regex/Matcher;</methods>
+                <methods xsi:type="java:java.lang.String">quoteReplacement(Ljava/lang/String;)Ljava/lang/String;</methods>
+                <methods xsi:type="java:java.lang.String">replaceAll(Ljava/lang/String;)Ljava/lang/String;</methods>
+                <methods xsi:type="java:java.lang.String">replaceFirst(Ljava/lang/String;)Ljava/lang/String;</methods>
+                <methods xsi:type="java:java.lang.String">toString()Ljava/lang/String;</methods>
+                <methods xsi:type="java:java.lang.String">hitEnd()Z</methods>
+                <methods xsi:type="java:java.lang.String">requireEnd()Z</methods>
+                <name>java/util/regex/Matcher</name>
+                <layer>classes</layer>
+                <super-name>java/lang/Object</super-name>
+                <project>jpf-autodoc-options</project>
+            </info>
+        </value>
+    </model-class>
+    <model-class xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">org/junit/Before</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.ModelClassInfo">
+            <std-name>org/junit/Before</std-name>
+            <type>ModelClass</type>
+            <info flags="9729">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-autodoc-options\build\classes\org\junit\Before.class</location>
+                <name>org/junit/Before</name>
+                <layer>classes</layer>
+                <super-name>java/lang/Object</super-name>
+                <interfaces xsi:type="java:java.lang.String">java/lang/annotation/Annotation</interfaces>
+                <project>jpf-autodoc-options</project>
+            </info>
+        </value>
+    </model-class>
+    <model-class xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">sun/reflect/annotation/AnnotationType</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.ModelClassInfo">
+            <std-name>sun/reflect/annotation/AnnotationType</std-name>
+            <std-methods xsi:type="java:java.lang.String">getInstance(Ljava/lang/Class;)Lsun/reflect/annotation/AnnotationType;</std-methods>
+            <std-methods xsi:type="java:java.lang.String">&lt;init&gt;(Ljava/lang/Class;)V</std-methods>
+            <std-methods xsi:type="java:java.lang.String">invocationHandlerReturnType(Ljava/lang/Class;)Ljava/lang/Class;</std-methods>
+            <std-methods xsi:type="java:java.lang.String">memberTypes()Ljava/util/Map;</std-methods>
+            <std-methods xsi:type="java:java.lang.String">members()Ljava/util/Map;</std-methods>
+            <std-methods xsi:type="java:java.lang.String">memberDefaults()Ljava/util/Map;</std-methods>
+            <std-methods xsi:type="java:java.lang.String">retention()Ljava/lang/annotation/RetentionPolicy;</std-methods>
+            <std-methods xsi:type="java:java.lang.String">isInherited()Z</std-methods>
+            <type>ModelClass</type>
+            <info flags="33">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-autodoc-options\build\classes\sun\reflect\annotation\AnnotationType.class</location>
+                <methods xsi:type="java:java.lang.String">getInstance(Ljava/lang/Class;)Lsun/reflect/annotation/AnnotationType;</methods>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;(Ljava/lang/Class;)V</methods>
+                <methods xsi:type="java:java.lang.String">invocationHandlerReturnType(Ljava/lang/Class;)Ljava/lang/Class;</methods>
+                <methods xsi:type="java:java.lang.String">memberTypes()Ljava/util/Map;</methods>
+                <methods xsi:type="java:java.lang.String">members()Ljava/util/Map;</methods>
+                <methods xsi:type="java:java.lang.String">memberDefaults()Ljava/util/Map;</methods>
+                <methods xsi:type="java:java.lang.String">retention()Ljava/lang/annotation/RetentionPolicy;</methods>
+                <methods xsi:type="java:java.lang.String">isInherited()Z</methods>
+                <name>sun/reflect/annotation/AnnotationType</name>
+                <layer>classes</layer>
+                <super-name>java/lang/Object</super-name>
+                <project>jpf-autodoc-options</project>
+            </info>
+        </value>
+    </model-class>
+    <native-peer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/jvm/AtomicFieldUpdater</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.NativePeerInfo">
+            <model-name>unknown</model-name>
+            <type>NativePeerClass</type>
+            <info flags="33">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-autodoc-options\build\peers\gov\nasa\jpf\jvm\AtomicFieldUpdater.class</location>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;()V</methods>
+                <methods xsi:type="java:java.lang.String">isNewPorFieldBoundary(Lgov/nasa/jpf/jvm/MJIEnv;II)Z</methods>
+                <methods xsi:type="java:java.lang.String">createAndSetFieldCG(Lgov/nasa/jpf/jvm/MJIEnv;I)Z</methods>
+                <name>gov/nasa/jpf/jvm/AtomicFieldUpdater</name>
+                <layer>peers</layer>
+                <super-name>java/lang/Object</super-name>
+                <project>jpf-autodoc-options</project>
+            </info>
+        </value>
+    </native-peer>
+    <native-peer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/jvm/JPF_gov_nasa_jpf_SerializationConstructor</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.NativePeerInfo">
+            <model-name>gov/nasa/jpf/SerializationConstructor</model-name>
+            <model-methods xsi:type="java:java.lang.String">&lt;init&gt;()V</model-methods>
+            <model-methods xsi:type="java:java.lang.String">newInstance([Ljava/lang/Object;)Ljava/lang/Object;</model-methods>
+            <type>NativePeerClass</type>
+            <info flags="33">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-autodoc-options\build\peers\gov\nasa\jpf\jvm\JPF_gov_nasa_jpf_SerializationConstructor.class</location>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;()V</methods>
+                <methods xsi:type="java:java.lang.String">newInstance___3Ljava_lang_Object_2__Ljava_lang_Object_2(Lgov/nasa/jpf/jvm/MJIEnv;II)I</methods>
+                <name>gov/nasa/jpf/jvm/JPF_gov_nasa_jpf_SerializationConstructor</name>
+                <layer>peers</layer>
+                <super-name>java/lang/Object</super-name>
+                <project>jpf-autodoc-options</project>
+            </info>
+        </value>
+    </native-peer>
+    <native-peer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/jvm/JPF_java_util_TimeZone</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.NativePeerInfo">
+            <model-name>unknown</model-name>
+            <type>NativePeerClass</type>
+            <info flags="33">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-autodoc-options\build\peers\gov\nasa\jpf\jvm\JPF_java_util_TimeZone.class</location>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;()V</methods>
+                <methods xsi:type="java:java.lang.String">getTimeZone(Lgov/nasa/jpf/jvm/MJIEnv;I)Ljava/util/TimeZone;</methods>
+                <methods xsi:type="java:java.lang.String">getDisplayName__ZILjava_util_Locale_2__Ljava_lang_String_2(Lgov/nasa/jpf/jvm/MJIEnv;IZII)I</methods>
+                <methods xsi:type="java:java.lang.String">getTimeZone__Ljava_lang_String_2__Ljava_util_TimeZone_2(Lgov/nasa/jpf/jvm/MJIEnv;II)I</methods>
+                <methods xsi:type="java:java.lang.String">inDaylightTime__Ljava_util_Date_2__Z(Lgov/nasa/jpf/jvm/MJIEnv;II)Z</methods>
+                <methods xsi:type="java:java.lang.String">getRawOffset____I(Lgov/nasa/jpf/jvm/MJIEnv;I)I</methods>
+                <name>gov/nasa/jpf/jvm/JPF_java_util_TimeZone</name>
+                <layer>peers</layer>
+                <super-name>java/lang/Object</super-name>
+                <project>jpf-autodoc-options</project>
+            </info>
+        </value>
+    </native-peer>
+    <native-peer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/jvm/JPF_sun_net_www_protocol_http_Handler</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.NativePeerInfo">
+            <model-name>sun/net/www/protocol/http/Handler</model-name>
+            <model-methods xsi:type="java:java.lang.String">&lt;init&gt;()V</model-methods>
+            <model-methods xsi:type="java:java.lang.String">getConnectionClass(Ljava/lang/String;)Ljava/lang/Class;</model-methods>
+            <model-methods xsi:type="java:java.lang.String">&lt;clinit&gt;()V</model-methods>
+            <type>NativePeerClass</type>
+            <info flags="33">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-autodoc-options\build\peers\gov\nasa\jpf\jvm\JPF_sun_net_www_protocol_http_Handler.class</location>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;()V</methods>
+                <methods xsi:type="java:java.lang.String">init(Lgov/nasa/jpf/Config;)V</methods>
+                <methods xsi:type="java:java.lang.String">getConnectionClass__Ljava_lang_String_2__Ljava_lang_Class_2(Lgov/nasa/jpf/jvm/MJIEnv;II)I</methods>
+                <methods xsi:type="java:java.lang.String">&lt;clinit&gt;()V</methods>
+                <name>gov/nasa/jpf/jvm/JPF_sun_net_www_protocol_http_Handler</name>
+                <layer>peers</layer>
+                <super-name>java/lang/Object</super-name>
+                <project>jpf-autodoc-options</project>
+            </info>
+        </value>
+    </native-peer>
+</jpf-components>

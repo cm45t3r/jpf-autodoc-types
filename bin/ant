@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+# unix shell script to build jpfadt with an ant builder
+#
+
+JPF_ADT=`dirname "$0"`/..
+
+java -jar "$JPF_ADT/tools/ant-launcher.jar" "$@"

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jpf-components>
+    <subtype xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+        <key xsi:type="java:java.lang.String">gov/nasa/jpf/numeric/bytecode/InstructionFactory</key>
+        <value xsi:type="java:gov.nasa.jpf.autodoc.info.SubtypeInfo">
+            <ancestors xsi:type="java:java.lang.String">gov/nasa/jpf/jvm/bytecode/InstructionFactory</ancestors>
+            <super-methods xsi:type="java:java.lang.String">dadd()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">dcmpg()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">dcmpl()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">ddiv()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">dmul()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">dsub()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">fadd()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">fcmpg()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">fcmpl()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">fdiv()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">fmul()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">fsub()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">iadd()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">idiv()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">iinc(II)Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">imul()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">isub()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">ladd()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">ldc2_w(J)Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">ldc2_w(D)Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">ldiv()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">lmul()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <super-methods xsi:type="java:java.lang.String">lsub()Lgov/nasa/jpf/jvm/bytecode/Instruction;</super-methods>
+            <type>InstructionFactory</type>
+            <info flags="33">
+                <location>C:\Users\Carlos Uribe\.jpf\jpf-numeric\build\main\gov\nasa\jpf\numeric\bytecode\InstructionFactory.class</location>
+                <methods xsi:type="java:java.lang.String">&lt;init&gt;(Lgov/nasa/jpf/Config;)V</methods>
+                <methods xsi:type="java:java.lang.String">dadd()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">dcmpg()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">dcmpl()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">ddiv()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">dmul()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">dsub()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">fadd()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">fcmpg()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">fcmpl()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">fdiv()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">fmul()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">fsub()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">iadd()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">idiv()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">iinc(II)Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">imul()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">isub()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">ladd()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">ldc2_w(J)Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">ldc2_w(D)Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">ldiv()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">lmul()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <methods xsi:type="java:java.lang.String">lsub()Lgov/nasa/jpf/jvm/bytecode/Instruction;</methods>
+                <name>gov/nasa/jpf/numeric/bytecode/InstructionFactory</name>
+                <layer>main</layer>
+                <super-name>gov/nasa/jpf/jvm/bytecode/InstructionFactory</super-name>
+                <project>jpf-numeric</project>
+            </info>
+        </value>
+    </subtype>
+</jpf-components>

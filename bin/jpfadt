@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+# unix shell script to run jpfadt
+#
+
+JPF_ADT=`dirname "$0"`/..
+
+java -jar "$JPF_ADT/build/jpf-autodoc-types.jar" "$@"

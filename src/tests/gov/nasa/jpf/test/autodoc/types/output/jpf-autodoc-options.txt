@@ -1,0 +1,13 @@
+ -- listing scanned & parsed classes -- 
+  [0] gov/nasa/jpf/AnnotationProxyBase | flags: 33
+  [1] gov/nasa/jpf/jvm/AtomicFieldUpdater | flags: 33
+  [2] gov/nasa/jpf/jvm/JPF_gov_nasa_jpf_SerializationConstructor | flags: 33
+  [3] gov/nasa/jpf/jvm/JPF_java_util_TimeZone | flags: 33
+  [4] gov/nasa/jpf/jvm/JPF_sun_net_www_protocol_http_Handler | flags: 33
+  [5] gov/nasa/jpf/listener/CoverageAnalyzer | flags: 33
+  [6] gov/nasa/jpf/listener/OverlappingMethodAnalyzer | flags: 33
+  [7] gov/nasa/jpf/symbc/SymbolicInstructionFactory | flags: 33
+  [8] java/io/FileInputStream | flags: 33
+  [9] java/util/regex/Matcher | flags: 33
+  [10] org/junit/Before | flags: 9729
+  [11] sun/reflect/annotation/AnnotationType | flags: 33
