@@ -1,6 +1,6 @@
 # JPF AUTODOC TYPES
 
-Automatic Documentation of JPF Types
+Automatic Documentation of JPF Types.
 
 
 ## Introduction
@@ -56,9 +56,9 @@ The output is recorded in text files for each test case in `build/tests`.
 
 ## Usage
 
-Usage: jpfadt [<options>] {<target specification>}
-
 ``` bash
+jpfadt [<options>] {<target specification>}
+
 <target specification> :: 
   classfile : java classfile path or filename. |
   classname : named package classname. A valid classpath must be specified. |
@@ -163,7 +163,7 @@ Using classpath (wildcard expansion supported!):
 
     ./bin/jpfadt -cp '../jpf-core/build/*' gov.nasa.jpf.AnnotationProxyBase
 
-**NOTE:** use single quotations to prevent shell expanding path wildcards.
+**NOTE:** use single quotations to prevent shell path wildcard expansion.
 
 Analyze jar archives:
 
