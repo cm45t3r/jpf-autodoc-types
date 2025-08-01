@@ -2,7 +2,7 @@
 
 **⚠️ DEPRECATED - Use the new JPF AutoDoc tool instead**
 
-This tool has been replaced by the modern [JPF AutoDoc](https://github.com/javapathfinder/jpf-autodoc) project, which provides:
+This tool has been replaced by the modern [JPF AutoDoc](https://github.com/cm45t3r/jpf-autodoc) project, which provides:
 
 - **Unified functionality**: Combines configuration and type analysis in one tool
 - **Modern architecture**: Java 11, Gradle, modern dependencies
@@ -17,7 +17,7 @@ For new projects, please use the modern JPF AutoDoc tool:
 
 ```bash
 # Install and use the new JPF AutoDoc
-git clone https://github.com/javapathfinder/jpf-autodoc.git
+git clone https://github.com/cm45t3r/jpf-autodoc.git
 cd jpf-autodoc
 ./gradlew build
 ./bin/jpfautodoc --help
@@ -26,7 +26,7 @@ cd jpf-autodoc
 ./bin/jpfautodoc -cp /path/to/jpf-core --types-only -o markdown -f types.md
 ```
 
-**Migration Guide**: See [MIGRATION_GUIDE.md](https://github.com/javapathfinder/jpf-autodoc/blob/main/MIGRATION_GUIDE.md) for step-by-step migration instructions.
+**Migration Guide**: See [MIGRATION_GUIDE.md](https://github.com/cm45t3r/jpf-autodoc/blob/main/MIGRATION_GUIDE.md) for step-by-step migration instructions.
 
 ---
 
@@ -225,4 +225,4 @@ Specify output mode:
 
 ---
 
-**⚠️ This tool is deprecated. Please use the modern [JPF AutoDoc](https://github.com/javapathfinder/jpf-autodoc) instead.**
+**⚠️ This tool is deprecated. Please use the modern [JPF AutoDoc](https://github.com/cm45t3r/jpf-autodoc) instead.**
