@@ -1,14 +1,46 @@
 # JPF AUTODOC TYPES
 
+**⚠️ DEPRECATED - Use the new JPF AutoDoc tool instead**
+
+This tool has been replaced by the modern [JPF AutoDoc](https://github.com/javapathfinder/jpf-autodoc) project, which provides:
+
+- **Unified functionality**: Combines configuration and type analysis in one tool
+- **Modern architecture**: Java 11, Gradle, modern dependencies
+- **Better performance**: Parallel processing, caching, optimization
+- **Multiple output formats**: Markdown, XML, JSON, HTML, Console
+- **Comprehensive testing**: 100% test coverage
+- **Complete documentation**: User guide, API reference, migration guide
+
+## 🚀 **Recommended: Use JPF AutoDoc**
+
+For new projects, please use the modern JPF AutoDoc tool:
+
+```bash
+# Install and use the new JPF AutoDoc
+git clone https://github.com/javapathfinder/jpf-autodoc.git
+cd jpf-autodoc
+./gradlew build
+./bin/jpfautodoc --help
+
+# Analyze types with the new tool
+./bin/jpfautodoc -cp /path/to/jpf-core --types-only -o markdown -f types.md
+```
+
+**Migration Guide**: See [MIGRATION_GUIDE.md](https://github.com/javapathfinder/jpf-autodoc/blob/main/MIGRATION_GUIDE.md) for step-by-step migration instructions.
+
+---
+
+## Legacy Documentation (Deprecated)
+
+*The following documentation is kept for reference but this tool is no longer maintained.*
+
 Automatic Documentation of JPF Types.
 
-
-## Introduction
+### Introduction
 
 `jpf-autodoc-types` is an extension of [Java PathFinder (JPF)](https://github.com/javapathfinder/jpf-core). It extracts structural information related to type hierarchy in jpf projects. Specifically, this project extracts information about Listeners, InstructionFactories, Native Peers, and classes that model library classes. The information is recorded in popular text formats.
 
-
-## Requirements
+### Requirements
 
 `jpf-autodoc-types` needs Java JRE to run and JDK to build. Java 6, 7 and 8 are supported.
 
@@ -22,8 +54,7 @@ Navigate to root folder in order to build, run and execute tests:
 
     drive:\user_folder\projects_folder\jpf-autodoc-types>
 
-
-## Building
+### Building
 
 This tool uses an Apache Ant script to build. Some ant binaries and shell scripts are provided if you prefer not installing ant. Binaries can be found in `tools` folder and shell scripts in `bin` folder. Run `ant` command without args or specify the `build` target:
 
@@ -33,8 +64,7 @@ This tool uses an Apache Ant script to build. Some ant binaries and shell script
     ./bin/ant          (if no ant installed)
     ./bin/ant build
 
-
-## Running
+### Running
 
 Run the `jpfadt` script from the `bin` folder or use the `java -jar` command:
 
@@ -43,8 +73,7 @@ Run the `jpfadt` script from the `bin` folder or use the `java -jar` command:
 
 See [usage](#usage) for further details.
 
-
-## Testing
+### Testing
 
 Run **ant** target `test`:
 
@@ -53,8 +82,7 @@ Run **ant** target `test`:
 
 The output is recorded in text files for each test case in `build/tests`.
 
-
-## Usage
+### Usage
 
 ``` bash
 jpfadt [<options>] {<target specification>}
@@ -195,5 +223,6 @@ Specify output mode:
 
     ./bin/jpfadt -oX -o1
 
+---
 
-Happy Documenting!
+**⚠️ This tool is deprecated. Please use the modern [JPF AutoDoc](https://github.com/javapathfinder/jpf-autodoc) instead.**
